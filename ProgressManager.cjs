@@ -77,21 +77,21 @@ class ProgressManager {
 
 module.exports = ProgressManager
 
-const pm = new ProgressManager()
+// const pm = new ProgressManager()
 
-// Get current values
-console.log('Current:', pm.getCurrent())
+// // Get current values
+// console.log('Current:', pm.getCurrent())
 
-// Update Insta and YT
-pm.updateCurrentInsta(48)
-pm.updateCurrentYt(47)
-pm.updateCurrentFB(120)
+// // Update Insta and YT
+// pm.updateCurrentInsta(48)
+// pm.updateCurrentYt(47)
+// pm.updateCurrentFB(120)
 
-// Convert global number to chapter & verse
-const instaPos = pm.getChapterAndVerse(pm.getCurrent().currentInsta)
-const ytPos = pm.getChapterAndVerse(pm.getCurrent().currentYt)
-const fbPos = pm.getChapterAndVerse(pm.getCurrent().currentFB)
+// // Convert global number to chapter & verse
+// const instaPos = pm.getChapterAndVerse(pm.getCurrent().currentInsta)
+// const ytPos = pm.getChapterAndVerse(pm.getCurrent().currentYt)
+// const fbPos = pm.getChapterAndVerse(pm.getCurrent().currentFB)
 
-console.log('Insta position:', instaPos)
-console.log('YouTube position:', ytPos)
-console.log('FaceBook position:', fbPos)
+// console.log('Insta position:', instaPos)
+// console.log('YouTube position:', ytPos)
+// console.log('FaceBook position:', fbPos)

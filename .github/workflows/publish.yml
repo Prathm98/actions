@@ -21,6 +21,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Get Files
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const ProgressManager = require('./ProgressManager.cjs')
+            const pm = new ProgressManager()
+
+            console.log('Current:', pm.getCurrent())
+
       - name: Run script
         env:
           GIT_PAT: ${{secrets.GIT_PAT }}
