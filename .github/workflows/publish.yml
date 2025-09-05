@@ -66,9 +66,10 @@ jobs:
             if(status1 && status2 && status3){}
 
       - name: Commit files from specific folder to repository
+
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add .
-          git commit -m "Published Videos"
-          git push HEAD:insta
+          git commit -m "Published Videos"|| echo "No changes to commit"
+          git push origin HEAD:insta
