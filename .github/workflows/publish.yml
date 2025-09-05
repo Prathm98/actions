@@ -67,6 +67,8 @@ jobs:
               console.log(status1, status2, status3)
             }
 
+            run()
+
       - name: Commit files from specific folder to repository
 
         run: |
