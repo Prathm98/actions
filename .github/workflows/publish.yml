@@ -34,33 +34,34 @@ jobs:
             const fs = require('fs')
             const pm = new ProgressManager()
 
-            const { currentInsta, currentYt, currentFB } = pm.getCurrent() 
+            const { currentInsta, currentYt, currentFB } = pm.getCurrent()
 
             const checkIfFileExists = (path) => {
               try {
                 return fs.existsSync(path)
-              } catch(err) {
-                return false;
+              } catch (err) {
+                return false
               }
             }
 
-            const getFiles = (current) => {
-              const {chapter, verse} = pm.getChapterAndVerse(current)
-              const filePath = `content/final${chapter}/final${chapter}-${verse}.mp4`
-              const outputFile = `content/final${chapter}-${verse}.mp4`
+            const getFiles = (current, i) => {
+              const { ch: chapter, verse } = pm.getChapterAndVerse(current)
+              const filePath = `content/final${chapter}/final${verse}-${i}.mp4`
+              const outputFile = `content/final${chapter}-${verse}-${i}.mp4`
 
-              if(checkIfFileExists(outputFile)){
+              console.log('processing', filePath)
+
+              if (checkIfFileExists(outputFile)) {
                 console.log(`${outputFile} already exists, skipping download)`)
-                return true;
-              }else{
+                return true
+              } else {
                 return downloadVideo(filePath, outputFile)
               }
             }
 
-            const status1 = getFiles(currentInsta)
-            const status2 = getFiles(currentYt)
-            const status3 = getFiles(currentFB)
-
+            const status1 = getFiles(currentInsta, 0) && getFiles(currentInsta, 1)
+            const status2 = getFiles(currentYt, 0) && getFiles(currentYt, 1)
+            const status3 = getFiles(currentFB, 0) && getFiles(currentFB, 1)
 
             if(status1 && status2 && status3){}
 
