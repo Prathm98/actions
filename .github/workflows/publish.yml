@@ -23,16 +23,51 @@ jobs:
 
       - name: Get Files
         uses: actions/github-script@v6
-        with:
-          script: |
-            const ProgressManager = require('./ProgressManager.cjs')
-            const pm = new ProgressManager()
-
-            console.log('Current:', pm.getCurrent())
-
-      - name: Run script
         env:
           GIT_PAT: ${{secrets.GIT_PAT }}
           GIT_REPO: ${{secrets.GIT_REPO }}
           GIT_BRANCH: ${{secrets.GIT_BRANCH }}
-        run: node fetchFiles.js
+        with:
+          script: |
+            const ProgressManager = require('./ProgressManager.cjs')
+            const downloadVideo = require('./fetchFiles.js')
+            const fs = require('fs')
+            const pm = new ProgressManager()
+
+            const { currentInsta, currentYt, currentFB } = pm.getCurrent() 
+
+            const checkIfFileExists = (path) => {
+              try {
+                return fs.existsSync(path)
+              } catch(err) {
+                return false;
+              }
+            }
+
+            const getFiles = (current) => {
+              const {chapter, verse} = pm.getChapterAndVerse(current)
+              const filePath = `content/final${chapter}/final${chapter}-${verse}.mp4`
+              const outputFile = `content/final${chapter}-${verse}.mp4`
+
+              if(checkIfFileExists(outputFile)){
+                console.log(`${outputFile} already exists, skipping download)`)
+                return true;
+              }else{
+                return downloadVideo(filePath, outputFile)
+              }
+            }
+
+            const status1 = getFiles(currentInsta)
+            const status2 = getFiles(currentYt)
+            const status3 = getFiles(currentFB)
+
+
+            if(status1 && status2 && status3){}
+
+      - name: Commit files from specific folder to repository
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "Published Videos"
+          git push HEAD:insta

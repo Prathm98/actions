@@ -4,10 +4,8 @@ import axios from 'axios'
 const GITHUB_PAT = process.env.GIT_PAT // your PAT with "repo" scope
 const REPO = process.env.GIT_REPO
 const BRANCH = process.env.GIT_BRANCH
-const FILE_PATH = 'content/final1/final1-0.mp4' // path inside repo
-const OUTPUT_FILE = './downloaded.mp4'
 
-async function downloadVideo() {
+async function downloadVideo(FILE_PATH, OUTPUT_FILE) {
   try {
     // 1️⃣ Get file from GitHub API
     const res = await axios.get(
@@ -24,14 +22,11 @@ async function downloadVideo() {
     fs.writeFileSync(OUTPUT_FILE, Buffer.from(res.data))
 
     console.log(`🎉 Video downloaded: ${OUTPUT_FILE}`)
+    return true
   } catch (err) {
-    console.error(
-      '❌ Error downloading file:',
-      err.response?.data || err.message
-    )
+    console.log('❌ Error downloading file:', err.response?.data || err.message)
+    return false
   }
 }
-
-downloadVideo()
 
 export default downloadVideo
