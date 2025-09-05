@@ -26,4 +26,4 @@ jobs:
           GIT_PAT: ${{secrets.GIT_PAT }}
           GIT_REPO: ${{secrets.GIT_REPO }}
           GIT_BRANCH: ${{secrets.GIT_BRANCH }}
-        run: node --version
+        run: node fetchFiles.js
