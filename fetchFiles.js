@@ -1,7 +1,7 @@
-import fs from 'fs'
-import axios from 'axios'
+const fs = rquire('fs')
+const axios = rquire('axios')
 
-const GITHUB_PAT = process.env.GIT_PAT // your PAT with "repo" scope
+const GITHUB_PAT = process.env.GIT_PAT
 const REPO = process.env.GIT_REPO
 const BRANCH = process.env.GIT_BRANCH
 
@@ -29,4 +29,4 @@ async function downloadVideo(FILE_PATH, OUTPUT_FILE) {
   }
 }
 
-export default downloadVideo
+module.exports = { downloadVideo }
