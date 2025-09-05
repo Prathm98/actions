@@ -30,7 +30,7 @@ jobs:
         with:
           script: |
             const ProgressManager = require('./ProgressManager.cjs')
-            const downloadVideo = require('./fetchFiles.js')
+            const downloadVideo = require('./fetchFiles.cjs')
             const fs = require('fs')
             const pm = new ProgressManager()
 
