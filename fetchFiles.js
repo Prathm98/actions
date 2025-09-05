@@ -1,5 +1,5 @@
-const fs = rquire('fs')
-const axios = rquire('axios')
+const fs = require('fs')
+const axios = require('axios')
 
 const GITHUB_PAT = process.env.GIT_PAT
 const REPO = process.env.GIT_REPO
@@ -29,4 +29,4 @@ async function downloadVideo(FILE_PATH, OUTPUT_FILE) {
   }
 }
 
-module.exports = { downloadVideo }
+module.exports = downloadVideo
