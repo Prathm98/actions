@@ -63,7 +63,7 @@ jobs:
             const status2 = getFiles(currentYt, 0) && getFiles(currentYt, 1)
             const status3 = getFiles(currentFB, 0) && getFiles(currentFB, 1)
 
-            if(status1 && status2 && status3){}
+            console.log(status1, status2, status3)
 
       - name: Commit files from specific folder to repository
 
