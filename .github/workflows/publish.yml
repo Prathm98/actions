@@ -54,7 +54,15 @@ jobs:
           GIT_PAT: ${{secrets.GIT_PAT }}
           GIT_REPO: ${{secrets.GIT_REPO }}
           GIT_BRANCH: ${{secrets.GIT_BRANCH }}
-        with:
-          script: |
-            const run = require('./actions.cjs')
-            run()
+          INSTA_USERID: ${{secrets.INSTA_USERID }}
+          FB_PAGEID: ${{secrets.FB_PAGEID }}
+          INSTA_SECRETE: ${{secrets.INSTA_SECRETE }}
+          FB_TOKEN: ${{secrets.FB_TOKEN }}
+        run: |
+          node ./Runner.js
+
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "Updated status"|| echo "No changes to commit"
+          git push origin HEAD:insta
