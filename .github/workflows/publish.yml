@@ -49,7 +49,6 @@ jobs:
           YT_TOKEN: ${{ secrets.YT_TOKEN }}
 
       - name: Publish Insta
-        uses: actions/github-script@v6
         env:
           GIT_PAT: ${{secrets.GIT_PAT }}
           GIT_REPO: ${{secrets.GIT_REPO }}
