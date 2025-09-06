@@ -63,7 +63,7 @@ jobs:
         run: |
           node ./Runner.js
 
-          base64 -w0 token.json | gh secret set YT_TOKEN --env production
+          base64 -w0 token.json | gh secret set YT_TOKEN
 
           git config --local user.email "46840479+Prathm98@users.noreply.github.com"
           git config --local user.name "Prathmesh Wakodikar"
