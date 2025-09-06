@@ -2,7 +2,7 @@ name: Daily Publish
 
 on:
   schedule:
-    - cron: '0 6 * * *' # 11:30 AM IST
+    - cron: '0 6 * * *'
   push:
     branches:
       - insta
@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout main repo
         uses: actions/checkout@v4
+        with:
+          ref: insta
 
       - uses: actions/setup-node@v4
         with:
@@ -34,8 +36,8 @@ jobs:
 
       - name: Commit files from specific folder to repository
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "46840479+Prathm98@users.noreply.github.com"
+          git config --local user.name "Prathmesh Wakodikar"
           git add .
           git commit -m "Published Videos"|| echo "No changes to commit"
           git push origin HEAD:insta
@@ -60,8 +62,10 @@ jobs:
         run: |
           node ./Runner.js
 
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          base64 -w0 token.json | gh secret set YT_TOKEN --env production
+
+          git config --local user.email "46840479+Prathm98@users.noreply.github.com"
+          git config --local user.name "Prathmesh Wakodikar"
           git add .
           git commit -m "Updated status"|| echo "No changes to commit"
           git push origin HEAD:insta

@@ -62,7 +62,7 @@ async function runner() {
   const ytData = getData(YtCh, YtVerse)
   const fbData = getData(FBCh, FBVerse)
 
-  let instaCreationID, fbRes, instaRes, ytRes, videoIdFB
+  let instaCreationID, fbRes, instaRes, ytRes, videoIdFB, pageAccessTokenFB
 
   // INSTA UPLOAD
   try {
@@ -76,14 +76,18 @@ async function runner() {
   }
 
   //   FB UPLOAD
-  const pageAccessTokenFB = await getPageAccessToken(accessTokenFB, pageIdFB)
+  try {
+    pageAccessTokenFB = await getPageAccessToken(accessTokenFB, pageIdFB)
 
-  videoIdFB = await uploadReel(
-    pageAccessTokenFB,
-    pageIdFB,
-    `./content/final${FBCh}-${FBVerse}-1.mp4`,
-    fbData.caption
-  )
+    videoIdFB = await uploadReel(
+      pageAccessTokenFB,
+      pageIdFB,
+      `./content/final${FBCh}-${FBVerse}-1.mp4`,
+      fbData.caption
+    )
+  } catch (err) {
+    console.log('❌ Error uploading to FB:', err)
+  }
 
   // YT UPLOAD
   ytRes = await uploadYTVideo(
