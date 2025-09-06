@@ -29,51 +29,32 @@ jobs:
           GIT_BRANCH: ${{secrets.GIT_BRANCH }}
         with:
           script: |
-            async function run() {
-              const ProgressManager = require('./ProgressManager.cjs')
-              const downloadVideo = require('./fetchFiles.cjs')
-              const fs = require('fs')
-              const pm = new ProgressManager()
-
-              const { currentInsta, currentYt, currentFB } = pm.getCurrent()
-
-              const checkIfFileExists = (path) => {
-                try {
-                  return fs.existsSync(path)
-                } catch (err) {
-                  return false
-                }
-              }
-
-              const getFiles = async (current, i) => {
-                const { ch: chapter, verse } = pm.getChapterAndVerse(current)
-                const filePath = `content/final${chapter}/final${verse}-${i}.mp4`
-                const outputFile = `content/final${chapter}-${verse}-${i}.mp4`
-
-                console.log('processing', filePath)
-
-                if (checkIfFileExists(outputFile)) {
-                  console.log(`${outputFile} already exists, skipping download)`)
-                  return true
-                } else {
-                  return downloadVideo(filePath, outputFile)
-                }
-              }
-
-              const status1 = await getFiles(currentInsta, 0) && await getFiles(currentInsta, 1)
-              const status2 = await getFiles(currentYt, 0) && await getFiles(currentYt, 1)
-              const status3 = await getFiles(currentFB, 0) && await getFiles(currentFB, 1)
-
-              console.log(status1, status2, status3)
-            }
-
+            const run = require('./actions.cjs')
             run()
 
       - name: Commit files from specific folder to repository
-
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add .
           git commit -m "Published Videos"|| echo "No changes to commit"
           git push origin HEAD:insta
+
+      - name: Decode credentials
+        run: |
+          echo "$YT_CRED" | base64 -d > credentials.json
+          echo "$YT_TOKEN" | base64 -d > token.json
+        env:
+          YT_CRED: ${{ secrets.YT_CRED }}
+          YT_TOKEN: ${{ secrets.YT_TOKEN }}
+
+      - name: Publish Insta
+        uses: actions/github-script@v6
+        env:
+          GIT_PAT: ${{secrets.GIT_PAT }}
+          GIT_REPO: ${{secrets.GIT_REPO }}
+          GIT_BRANCH: ${{secrets.GIT_BRANCH }}
+        with:
+          script: |
+            const run = require('./actions.cjs')
+            run()
