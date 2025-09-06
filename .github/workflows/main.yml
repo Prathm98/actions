@@ -66,5 +66,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add .
-          git commit -m "Updated status"|| echo "No changes to commit"
+          git commit -m "Updated progress"|| echo "No changes to commit"
           git push origin HEAD:insta
