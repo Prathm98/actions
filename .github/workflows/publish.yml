@@ -1,0 +1,71 @@
+name: Daily Publish
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  push:
+    branches:
+      - insta
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main repo
+        uses: actions/checkout@v4
+        with:
+          ref: insta
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Get Files
+        uses: actions/github-script@v6
+        env:
+          GIT_PAT: ${{secrets.GIT_PAT }}
+          GIT_REPO: ${{secrets.GIT_REPO }}
+          GIT_BRANCH: ${{secrets.GIT_BRANCH }}
+        with:
+          script: |
+            const run = require('./actions.cjs')
+            run()
+
+      - name: Commit files from specific folder to repository
+        run: |
+          git config --local user.email "46840479+Prathm98@users.noreply.github.com"
+          git config --local user.name "Prathmesh Wakodikar"
+          git add .
+          git commit -m "Published Videos"|| echo "No changes to commit"
+          git push origin HEAD:insta
+
+      - name: Decode credentials
+        run: |
+          echo "$YT_CRED" | base64 -d > credentials.json
+          echo "$YT_TOKEN" | base64 -d > token.json
+        env:
+          YT_CRED: ${{ secrets.YT_CRED }}
+          YT_TOKEN: ${{ secrets.YT_TOKEN }}
+
+      - name: Publish Insta
+        env:
+          GIT_PAT: ${{secrets.GIT_PAT }}
+          GIT_REPO: ${{secrets.GIT_REPO }}
+          GIT_BRANCH: ${{secrets.GIT_BRANCH }}
+          INSTA_USERID: ${{secrets.INSTA_USERID }}
+          FB_PAGEID: ${{secrets.FB_PAGEID }}
+          INSTA_SECRETE: ${{secrets.INSTA_SECRETE }}
+          FB_TOKEN: ${{secrets.FB_TOKEN }}
+        run: |
+          node ./Runner.js
+
+          base64 -w0 token.json | gh secret set YT_TOKEN --env production
+
+          git config --local user.email "46840479+Prathm98@users.noreply.github.com"
+          git config --local user.name "Prathmesh Wakodikar"
+          git add .
+          git commit -m "Updated status"|| echo "No changes to commit"
+          git push origin HEAD:insta
