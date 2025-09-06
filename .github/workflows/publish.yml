@@ -63,6 +63,8 @@ jobs:
         run: |
           node ./Runner.js
 
+          echo "${{ secrets.GIT_PAT }}" | gh auth login --with-token
+
           base64 -w0 token.json | gh secret set YT_TOKEN
 
           git config --local user.email "46840479+Prathm98@users.noreply.github.com"
