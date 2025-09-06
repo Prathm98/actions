@@ -61,6 +61,7 @@ jobs:
           FB_PAGEID: ${{secrets.FB_PAGEID }}
           INSTA_SECRETE: ${{secrets.INSTA_SECRETE }}
           FB_TOKEN: ${{secrets.FB_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           node ./Runner.js
 
