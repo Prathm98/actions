@@ -1,3 +1,6 @@
+// import dotenv from 'dotenv'
+// dotenv.config()
+
 import fs from 'fs'
 import { google } from 'googleapis'
 
@@ -59,7 +62,7 @@ async function authorize() {
   const oAuth2Client = new google.auth.OAuth2(
     process.env.GOOGLE_CLIENT_ID,
     process.env.GOOGLE_CLIENT_SECRET,
-    'urn:ietf:wg:oauth:2.0:oob' // or your redirect URI if you set one
+    'http://localhost' // or your redirect URI if you set one
   )
 
   oAuth2Client.setCredentials({
