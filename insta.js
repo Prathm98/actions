@@ -40,7 +40,7 @@ async function publishToInstagram(creationId, pm, currentInsta) {
   // Step 2: Poll with interval until upload finishes
   const statusUrl = `https://graph.instagram.com/v23.0/${creationId}`
   let checks = 0
-  const maxChecks = 18
+  const maxChecks = 24
 
   const intervalId = setInterval(async () => {
     checks++

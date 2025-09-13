@@ -55,6 +55,20 @@ async function authorize() {
   }
 }
 
+async function authorize1() {
+  const oAuth2Client = new google.auth.OAuth2(
+    process.env.GOOGLE_CLIENT_ID,
+    process.env.GOOGLE_CLIENT_SECRET,
+    'urn:ietf:wg:oauth:2.0:oob' // or your redirect URI if you set one
+  )
+
+  oAuth2Client.setCredentials({
+    refresh_token: process.env.GOOGLE_REFRESH_TOKEN,
+  })
+
+  return oAuth2Client
+}
+
 async function uploadVideo(auth, videoPath, title, description, thumbnail) {
   const service = google.youtube('v3')
 
@@ -84,16 +98,15 @@ async function uploadVideo(auth, videoPath, title, description, thumbnail) {
             categoryId: '24',
           },
           status: {
-            privacyStatus: 'public', // "public" | "unlisted" | "private"
-            selfDeclaredMadeForKids: false, // ✅ Not made for kids
+            privacyStatus: 'public',
+            selfDeclaredMadeForKids: false,
           },
         },
         media: {
-          body: fs.createReadStream(videoPath), // path to your video file
+          body: fs.createReadStream(videoPath),
         },
       },
       {
-        // Helpful for large uploads
         onUploadProgress: (evt) => {
           const progress = (evt.bytesRead / fs.statSync(videoPath).size) * 100
           process.stdout.write(`Uploading: ${progress.toFixed(2)}%\r`)
@@ -102,18 +115,16 @@ async function uploadVideo(auth, videoPath, title, description, thumbnail) {
     )
     console.log('\nYT Video uploaded. Video ID:', res.data.id)
 
-    const thumbRes = await service.thumbnails.set({
-      auth,
-      videoId: res.data.id,
-      media: {
-        body: fs.createReadStream(thumbnail), // your thumbnail image
-      },
-    })
+    if (thumbnail) {
+      const thumbRes = await service.thumbnails.set({
+        auth,
+        videoId: res.data.id,
+        media: { body: fs.createReadStream(thumbnail) },
+      })
+      console.log('✅ YT Thumbnail set:', thumbRes.data)
+    }
 
-    console.log('✅ YT Thumbnail set:', thumbRes.data)
-
-    //  Now add to playlist
-    console.log('📺 YT Adding video to playlist...')
+    console.log('📺 Adding to playlist...')
     await service.playlistItems.insert({
       auth,
       part: 'snippet',
@@ -137,7 +148,7 @@ async function uploadVideo(auth, videoPath, title, description, thumbnail) {
 
 const uploadYTVideo = async (videoPath, title, description, thumbnail) => {
   try {
-    const auth = await authorize()
+    const auth = await authorize1()
     const res = await uploadVideo(
       auth,
       videoPath,

@@ -43,13 +43,13 @@ jobs:
           git commit -m "Published Videos"|| echo "No changes to commit"
           git push origin HEAD:insta
 
-      - name: Decode credentials
-        run: |
-          echo "$YT_CRED" | base64 -d > credentials.json
-          echo "$YT_TOKEN" | base64 -d > token.json
-        env:
-          YT_CRED: ${{ secrets.YT_CRED }}
-          YT_TOKEN: ${{ secrets.YT_TOKEN }}
+      # - name: Decode credentials
+      #   run: |
+      #     echo "$YT_CRED" | base64 -d > credentials.json
+      #     echo "$YT_TOKEN" | base64 -d > token.json
+      #   env:
+      #     YT_CRED: ${{ secrets.YT_CRED }}
+      #     YT_TOKEN: ${{ secrets.YT_TOKEN }}
 
       - name: Publish Insta
         env:
@@ -60,6 +60,9 @@ jobs:
           FB_PAGEID: ${{secrets.FB_PAGEID }}
           INSTA_SECRETE: ${{secrets.INSTA_SECRETE }}
           FB_TOKEN: ${{secrets.FB_TOKEN }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
         run: |
           node ./Runner.js
 
@@ -69,6 +72,6 @@ jobs:
           git commit -m "Updated status"|| echo "No changes to commit"
           git push origin HEAD:insta
 
-          echo "${{ secrets.GIT_PAT }}" | gh auth login --with-token
+          # echo "${{ secrets.GIT_PAT }}" | gh auth login --with-token
 
-          base64 -w0 token.json | gh secret set YT_TOKEN
+          # base64 -w0 token.json | gh secret set YT_TOKEN

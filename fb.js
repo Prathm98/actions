@@ -77,7 +77,7 @@ async function uploadReel(pageToken, pageId, videoFilePath, caption) {
 
 async function checkVideoStatus(VIDEO_ID, PAGE_TOKEN, pm, currentFB) {
   let checks = 0
-  const maxChecks = 18
+  const maxChecks = 24
   const intervalMs = 5000
 
   const statusUrl = `https://graph.facebook.com/v23.0/${VIDEO_ID}`
