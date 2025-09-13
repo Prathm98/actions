@@ -4,6 +4,7 @@ import { uploadToInstagram, publishToInstagram } from './insta.js'
 import { uploadYTVideo } from './yt.js'
 import ProgressManager from './ProgressManager.cjs'
 import run from './actions.cjs'
+import { deleteVideosByNumber } from './cleanUp.js'
 
 const numbers = [
   '१',
@@ -111,6 +112,9 @@ async function runner() {
     pm._load()
     pm.updateCurrentYt(currentYt + 1)
   }
+
+  const minValue = Math.min(currentInsta, currentYt, currentFB)
+  deleteVideosByNumber('./content', minValue - 5, pm)
 }
 
 runner()
