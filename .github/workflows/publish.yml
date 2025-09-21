@@ -43,15 +43,15 @@ jobs:
           git commit -m "Published Videos"|| echo "No changes to commit"
           git push origin HEAD:insta
 
-      # - name: Decode credentials
-      #   run: |
-      #     echo "$YT_CRED" | base64 -d > credentials.json
-      #     echo "$YT_TOKEN" | base64 -d > token.json
-      #   env:
-      #     YT_CRED: ${{ secrets.YT_CRED }}
-      #     YT_TOKEN: ${{ secrets.YT_TOKEN }}
+      - name: Decode credentials
+        run: |
+          echo "$YT_CRED" | base64 -d > credentials.json
+          echo "$YT_TOKEN" | base64 -d > token.json
+        env:
+          YT_CRED: ${{ secrets.YT_CRED }}
+          YT_TOKEN: ${{ secrets.YT_TOKEN }}
 
-      - name: Publish Insta
+      - name: Publish
         env:
           GIT_PAT: ${{secrets.GIT_PAT }}
           GIT_REPO: ${{secrets.GIT_REPO }}
