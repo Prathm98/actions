@@ -67,10 +67,10 @@ async function runner() {
 
   // YT UPLOAD
   ytRes = await uploadYTVideo(
-    `./content/final${YtCh}-${YtVerse}-011.mp4`,
+    `./content/final${YtCh}-${YtVerse}-0.mp4`,
     ytData.title,
     ytData.caption,
-    `./thumbnails/chapter${YtCh}/${YtVerse}/covernk11.png`
+    `./thumbnails/chapter${YtCh}/${YtVerse}/covernk.png`
   )
   if (ytRes) {
     pm._load()
