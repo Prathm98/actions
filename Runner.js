@@ -65,6 +65,20 @@ async function runner() {
 
   let instaCreationID, fbRes, instaRes, ytRes, videoIdFB, pageAccessTokenFB
 
+  // YT UPLOAD
+  ytRes = await uploadYTVideo(
+    `./content/final${YtCh}-${YtVerse}-011.mp4`,
+    ytData.title,
+    ytData.caption,
+    `./thumbnails/chapter${YtCh}/${YtVerse}/covernk11.png`
+  )
+  if (ytRes) {
+    pm._load()
+    pm.updateCurrentYt(currentYt + 1)
+  } else {
+    return new Error('YT upload failed!')
+  }
+
   // INSTA UPLOAD
   try {
     instaCreationID = await uploadToInstagram(
@@ -90,14 +104,6 @@ async function runner() {
     console.log('❌ Error uploading to FB:', err)
   }
 
-  // YT UPLOAD
-  ytRes = await uploadYTVideo(
-    `./content/final${YtCh}-${YtVerse}-0.mp4`,
-    ytData.title,
-    ytData.caption,
-    `./thumbnails/chapter${YtCh}/${YtVerse}/covernk.png`
-  )
-
   if (instaCreationID) {
     instaRes = await publishToInstagram(instaCreationID, pm, currentInsta)
   }
@@ -108,10 +114,6 @@ async function runner() {
 
   //   if (instaRes) pm.updateCurrentInsta(currentInsta + 1)
   //   if (fbRes) pm.updateCurrentFB(currentFB + 1)
-  if (ytRes) {
-    pm._load()
-    pm.updateCurrentYt(currentYt + 1)
-  }
 
   const minValue = Math.min(currentInsta, currentYt, currentFB)
   deleteVideosByNumber('./content', minValue - 5, pm)
