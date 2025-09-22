@@ -76,7 +76,7 @@ async function runner() {
     pm._load()
     pm.updateCurrentYt(currentYt + 1)
   } else {
-    return new Error('YT upload failed!')
+    process.exit(1)
   }
 
   // INSTA UPLOAD
