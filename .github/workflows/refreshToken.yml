@@ -1,0 +1,69 @@
+name: Refresh Token
+
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: 'Provide your code string'
+        required: true
+        type: string
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main repo
+        uses: actions/checkout@v4
+        with:
+          ref: insta
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Decode credentials
+        run: |
+          echo "$YT_CRED" | base64 -d > credentials.json
+          echo "$YT_TOKEN" | base64 -d > token.json
+        env:
+          YT_CRED: ${{ secrets.YT_CRED }}
+          YT_TOKEN: ${{ secrets.YT_TOKEN }}
+
+      - name: Generate Token
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs')
+            const readline = require('readline')
+            const { google } = require('googleapis')
+
+            const CREDENTIALS_PATH = 'credentials.json'
+            const TOKEN_PATH = 'token.json'
+
+            const credentials = require(`./${CREDENTIALS_PATH}`)
+            const { client_secret, client_id, redirect_uris } = credentials.web
+            const oAuth2Client = new google.auth.OAuth2(
+              client_id,
+              client_secret,
+              redirect_uris[0]
+            )
+
+            try {
+              const { tokens } = await oAuth2Client.getToken(code)
+              oAuth2Client.setCredentials(tokens)
+              fs.writeFileSync(TOKEN_PATH, JSON.stringify(tokens, null, 2))
+              console.log('Tokens stored to', TOKEN_PATH)
+            } catch (err) {
+              console.error('Error retrieving access token', err)
+            }
+
+      - name: Update Token
+        env:
+          GIT_PAT: ${{secrets.GIT_PAT }}
+        run: |
+          echo "${{ secrets.GIT_PAT }}" | gh auth login --with-token
+
+          base64 -w0 token.json | gh secret set YT_TOKEN
