@@ -113,19 +113,19 @@ async function runner() {
 
   if (minValue === currentInsta && instaCreationID) {
     instaRes = await publishToInstagram(instaCreationID, pm, currentInsta)
-    if (!instaRes) {
-      console.log('Instagram upload failed, existing...')
-      process.exit(1)
-    }
+    // if (!instaRes) {
+    //   console.log('Instagram upload failed, existing...')
+    //   process.exit(1)
+    // }
   }
 
   if (minValue === currentFB && pageAccessTokenFB && videoIdFB) {
     fbRes = await checkVideoStatus(videoIdFB, pageAccessTokenFB, pm, currentFB)
 
-    if (!fbRes) {
-      console.log('Facebook upload failed, existing...')
-      process.exit(1)
-    }
+    // if (!fbRes) {
+    //   console.log('Facebook upload failed, existing...')
+    //   process.exit(1)
+    // }
   }
 
   deleteVideosByNumber('./content', minValue - 5, pm)

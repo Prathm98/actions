@@ -74,6 +74,7 @@ async function publishToInstagram(creationId, pm, currentInsta) {
             '❌ Insta Error publishing media:',
             err.response?.data || err.message
           )
+          process.exit(1)
           return false
         }
       } else if (status === 'ERROR' || checks >= maxChecks) {
@@ -82,6 +83,7 @@ async function publishToInstagram(creationId, pm, currentInsta) {
           '❌ Insta Upload failed or timed out, not publishing.',
           res.data
         )
+        process.exit(1)
         return false
       }
     } catch (err) {
@@ -90,6 +92,7 @@ async function publishToInstagram(creationId, pm, currentInsta) {
         '❌ Insta Error checking status:',
         err.response?.data || err.message
       )
+      process.exit(1)
       return false
     }
   }, 5000) // check every 5 seconds

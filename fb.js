@@ -106,6 +106,7 @@ async function checkVideoStatus(VIDEO_ID, PAGE_TOKEN, pm, currentFB) {
       ) {
         console.log('❌ FB Video processing failed or timed out.')
         clearInterval(intervalId)
+        process.exit(1)
         return false
       }
     } catch (err) {
@@ -114,6 +115,7 @@ async function checkVideoStatus(VIDEO_ID, PAGE_TOKEN, pm, currentFB) {
         err.response?.data || err.message
       )
       clearInterval(intervalId)
+      process.exit(1)
       return false
     }
   }, intervalMs)
