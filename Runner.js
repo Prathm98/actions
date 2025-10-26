@@ -54,6 +54,7 @@ async function runner() {
   await run()
   const pm = new ProgressManager()
   const { currentInsta, currentYt, currentFB } = pm.getCurrent()
+  const minValue = Math.min(currentInsta, currentYt, currentFB)
 
   const { ch: instaCh, verse: instaVerse } = pm.getChapterAndVerse(currentInsta)
   const { ch: YtCh, verse: YtVerse } = pm.getChapterAndVerse(currentYt)
@@ -65,57 +66,68 @@ async function runner() {
 
   let instaCreationID, fbRes, instaRes, ytRes, videoIdFB, pageAccessTokenFB
 
-  // YT UPLOAD
-  ytRes = await uploadYTVideo(
-    `./content/final${YtCh}-${YtVerse}-0.mp4`,
-    ytData.title,
-    ytData.caption,
-    `./thumbnails/chapter${YtCh}/${YtVerse}/covernk.png`
-  )
-  if (ytRes) {
-    pm._load()
-    pm.updateCurrentYt(currentYt + 1)
-  } else {
-    process.exit(1)
-  }
-
-  // INSTA UPLOAD
-  try {
-    instaCreationID = await uploadToInstagram(
-      instaData.caption,
-      instaCh,
-      instaVerse
+  if (minValue === currentYt) {
+    // YT UPLOAD
+    ytRes = await uploadYTVideo(
+      `./content/final${YtCh}-${YtVerse}-0.mp4`,
+      ytData.title,
+      ytData.caption,
+      `./thumbnails/chapter${YtCh}/${YtVerse}/covernk.png`
     )
-  } catch (err) {
-    console.log('❌ Error uploading to Instagram:', err)
+    if (ytRes) {
+      pm._load()
+      pm.updateCurrentYt(currentYt + 1)
+    } else {
+      process.exit(1)
+    }
   }
 
-  //   FB UPLOAD
-  try {
-    pageAccessTokenFB = await getPageAccessToken(accessTokenFB, pageIdFB)
-
-    videoIdFB = await uploadReel(
-      pageAccessTokenFB,
-      pageIdFB,
-      `./content/final${FBCh}-${FBVerse}-1.mp4`,
-      fbData.caption
-    )
-  } catch (err) {
-    console.log('❌ Error uploading to FB:', err)
+  if (minValue === currentInsta) {
+    // INSTA UPLOAD
+    try {
+      instaCreationID = await uploadToInstagram(
+        instaData.caption,
+        instaCh,
+        instaVerse
+      )
+    } catch (err) {
+      console.log('❌ Error uploading to Instagram:', err)
+    }
   }
 
-  if (instaCreationID) {
+  if (minValue === currentFB) {
+    //   FB UPLOAD
+    try {
+      pageAccessTokenFB = await getPageAccessToken(accessTokenFB, pageIdFB)
+
+      videoIdFB = await uploadReel(
+        pageAccessTokenFB,
+        pageIdFB,
+        `./content/final${FBCh}-${FBVerse}-1.mp4`,
+        fbData.caption
+      )
+    } catch (err) {
+      console.log('❌ Error uploading to FB:', err)
+    }
+  }
+
+  if (minValue === currentInsta && instaCreationID) {
     instaRes = await publishToInstagram(instaCreationID, pm, currentInsta)
+    if (!instaRes) {
+      console.log('Instagram upload failed, existing...')
+      process.exit(1)
+    }
   }
 
-  if (pageAccessTokenFB && videoIdFB) {
+  if (minValue === currentFB && pageAccessTokenFB && videoIdFB) {
     fbRes = await checkVideoStatus(videoIdFB, pageAccessTokenFB, pm, currentFB)
+
+    if (!fbRes) {
+      console.log('Facebook upload failed, existing...')
+      process.exit(1)
+    }
   }
 
-  //   if (instaRes) pm.updateCurrentInsta(currentInsta + 1)
-  //   if (fbRes) pm.updateCurrentFB(currentFB + 1)
-
-  const minValue = Math.min(currentInsta, currentYt, currentFB)
   deleteVideosByNumber('./content', minValue - 5, pm)
 }
 
