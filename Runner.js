@@ -120,8 +120,7 @@ async function runner() {
   }
 
   if (minValue === currentFB && pageAccessTokenFB && videoIdFB) {
-    fbRes = await checkVideo
-    Status(videoIdFB, pageAccessTokenFB, pm, currentFB)
+    fbRes = await checkVideoStatus(videoIdFB, pageAccessTokenFB, pm, currentFB)
 
     // if (!fbRes) {
     //   console.log('Facebook upload failed, existing...')
