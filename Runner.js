@@ -69,10 +69,10 @@ async function runner() {
   if (minValue === currentYt) {
     // YT UPLOAD
     ytRes = await uploadYTVideo(
-      `./content/final${YtCh}-${YtVerse}-0.mp4`,
+      `./content/final${YtCh}-${YtVerse}-1.mp4`,
       ytData.title,
       ytData.caption,
-      `./thumbnails/chapter${YtCh}/${YtVerse}/covernk.png`
+      `./thumbnails/chapter${YtCh}/${YtVerse}/covernk.png`,
     )
     if (ytRes) {
       pm._load()
@@ -88,7 +88,7 @@ async function runner() {
       instaCreationID = await uploadToInstagram(
         instaData.caption,
         instaCh,
-        instaVerse
+        instaVerse,
       )
     } catch (err) {
       console.log('❌ Error uploading to Instagram:', err)
@@ -104,7 +104,7 @@ async function runner() {
         pageAccessTokenFB,
         pageIdFB,
         `./content/final${FBCh}-${FBVerse}-1.mp4`,
-        fbData.caption
+        fbData.caption,
       )
     } catch (err) {
       console.log('❌ Error uploading to FB:', err)
@@ -120,7 +120,8 @@ async function runner() {
   }
 
   if (minValue === currentFB && pageAccessTokenFB && videoIdFB) {
-    fbRes = await checkVideoStatus(videoIdFB, pageAccessTokenFB, pm, currentFB)
+    fbRes = await checkVideo
+    Status(videoIdFB, pageAccessTokenFB, pm, currentFB)
 
     // if (!fbRes) {
     //   console.log('Facebook upload failed, existing...')
