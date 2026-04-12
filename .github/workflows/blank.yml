@@ -21,4 +21,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "test: ||${{ secrets.FB_TOKEN }}||"
+          echo "test: ||${{ secrets.FB_TOKEN }}||" > token.txt
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-token
+          path: token.txt
+          retention-days: 1
