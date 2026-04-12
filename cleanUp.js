@@ -23,10 +23,13 @@ function deleteVideosByNumber(contentDir = './content', number) {
 
   files.forEach((file) => {
     const base = path.parse(file.name).name
-    const filePath = path.join(dirPath, file.name)
-    fs.unlinkSync(filePath)
-    console.log(`🗑️ Deleted: ${base}`)
-    deleted++
+    const numberpart = +base.replace('final', '')
+    if (numberpart < number) {
+      const filePath = path.join(dirPath, file.name)
+      fs.unlinkSync(filePath)
+      console.log(`🗑️ Deleted: ${base}`)
+      deleted++
+    }
   })
 
   if (deleted === 0) {
