@@ -23,7 +23,7 @@ async function authorize() {
   const oAuth2Client = new google.auth.OAuth2(
     client_id,
     client_secret,
-    redirect_uris[0]
+    redirect_uris[0],
   )
 
   // Load previously saved token
@@ -52,7 +52,7 @@ async function authorize() {
           oAuth2Client.setCredentials(tokens)
           fs.writeFileSync(TOKEN_PATH, JSON.stringify(tokens))
           resolve(oAuth2Client)
-        }
+        },
       )
     })
   }
@@ -85,18 +85,14 @@ async function uploadVideo(auth, videoPath, title, description, thumbnail) {
             title,
             description,
             tags: [
-              'hoonerwala',
+              'daily_bytes',
               'explorepage',
               'explore',
-              'Geeta',
-              'gita',
-              'bhagwat',
-              'spiritual',
-              'bhagwatgeeta',
-              'bhakti',
-              'devotional',
               'art',
               'motivational',
+              'episode',
+              'chanakya',
+              'chanakya_niti',
             ],
             categoryId: '24',
           },
@@ -114,7 +110,7 @@ async function uploadVideo(auth, videoPath, title, description, thumbnail) {
           const progress = (evt.bytesRead / fs.statSync(videoPath).size) * 100
           process.stdout.write(`Uploading: ${progress.toFixed(2)}%\r`)
         },
-      }
+      },
     )
     console.log('\nYT Video uploaded. Video ID:', res.data.id)
 
@@ -133,7 +129,7 @@ async function uploadVideo(auth, videoPath, title, description, thumbnail) {
       part: 'snippet',
       requestBody: {
         snippet: {
-          playlistId: 'PLTrWyFxce72SUKsyLabrMCz94WfTYkpzN',
+          playlistId: 'PLVNn8UuPqxhe3zGFQ-UaKC-P2ZzsDGk4I',
           resourceId: {
             kind: 'youtube#video',
             videoId: res.data.id,
@@ -157,7 +153,7 @@ const uploadYTVideo = async (videoPath, title, description, thumbnail) => {
       videoPath,
       title,
       description,
-      thumbnail
+      thumbnail,
     )
     return res
   } catch (error) {
@@ -165,5 +161,12 @@ const uploadYTVideo = async (videoPath, title, description, thumbnail) => {
     return false
   }
 }
+
+// await uploadYTVideo(
+//   `./content/final2-72-1.mp4`,
+//   'ytData.title',
+//   'ytData.caption',
+//   `./thumbnails/chapter1/12/covernk.png`,
+// )
 
 export { uploadYTVideo }

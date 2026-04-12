@@ -1,4 +1,4 @@
-name: Refresh Token Insta
+name: Refresh Token Insta DB
 
 on:
   schedule:
@@ -24,7 +24,7 @@ jobs:
       - name: Generate Token
         uses: actions/github-script@v6
         env:
-          INSTA_SECRETE: ${{secrets.INSTA_SECRETE }}
+          INSTA_SECRETE: ${{secrets.INSTA_SECRETE_DB }}
         with:
           script: |
             const axios = require('axios')
@@ -49,4 +49,4 @@ jobs:
         run: |
           echo "${{ secrets.GIT_PAT }}" | gh auth login --with-token
 
-          cat token.txt | gh secret set INSTA_SECRETE
+          cat token.txt | gh secret set INSTA_SECRETE_DB

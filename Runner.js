@@ -6,41 +6,19 @@ import ProgressManager from './ProgressManager.cjs'
 import run from './actions.cjs'
 import { deleteVideosByNumber } from './cleanUp.js'
 
-const numbers = [
-  '१',
-  '२',
-  '३',
-  '४',
-  '५',
-  '६',
-  '७',
-  '८',
-  '९',
-  '१०',
-  '११',
-  '१२',
-  '१३',
-  '१४',
-  '१५',
-  '१६',
-  '१७',
-  '१८',
-]
-
-const getData = (ch, verse) => {
-  const DataItem = Data[`chapter${ch}`][verse - 1]
-  const title = `Gita Chapter ${ch} - Verse ${verse}`
-  const caption = `Gita Chapter ${ch} - Verse ${verse}
-
-गीता अध्याय ${numbers[ch - 1]} - श्लोक ${DataItem['shloka_number']}
+const getData = (ch) => {
+  const DataItem = Data[ch - 1]
+  const title = `Chanakya Niti - Episode ${ch}`
+  const caption = `
+${DataItem['meaning_english'].replace(/\n/g, ' ')}
 
 ${DataItem['shloka'].replace(/\n/g, ' ')}
 
-${DataItem['sandesh'].replace(/\n/g, ' ')}
+${DataItem['meaning_hindi'].replace(/\n/g, ' ')}
 
-#hoonerwala #explorepage #explore #Geeta #gita #bhagwat #spiritual #bhagwatgeeta #bhakti #devotional #art #motivational #chapter${ch} #गीता #अध्याय${
-    numbers[ch - 1]
-  } #श्लोक${DataItem['shloka_number']}
+${DataItem['hook_hindi'].replace(/\n/g, ' ')}
+
+#daily_bytes #explorepage #explore #art #motivational #episode${ch} ${DataItem['hashtags'].join(' ')}
 
 Disclaimer: This content and the images are AI-generated. The facts and information provided are for general informational purposes only and may not represent the most current or accurate details. Please verify with credible sources before making decisions. Always consult multiple references for confirmation.`
 
@@ -56,23 +34,23 @@ async function runner() {
   const { currentInsta, currentYt, currentFB } = pm.getCurrent()
   const minValue = Math.min(currentInsta, currentYt, currentFB)
 
-  const { ch: instaCh, verse: instaVerse } = pm.getChapterAndVerse(currentInsta)
-  const { ch: YtCh, verse: YtVerse } = pm.getChapterAndVerse(currentYt)
-  const { ch: FBCh, verse: FBVerse } = pm.getChapterAndVerse(currentFB)
+  const instaCh = currentInsta
+  const YtCh = currentYt
+  const FBCh = currentFB
 
-  const instaData = getData(instaCh, instaVerse)
-  const ytData = getData(YtCh, YtVerse)
-  const fbData = getData(FBCh, FBVerse)
+  const instaData = getData(instaCh)
+  const ytData = getData(YtCh)
+  const fbData = getData(FBCh)
 
   let instaCreationID, fbRes, instaRes, ytRes, videoIdFB, pageAccessTokenFB
 
   if (minValue === currentYt) {
     // YT UPLOAD
     ytRes = await uploadYTVideo(
-      `./content/final${YtCh}-${YtVerse}-1.mp4`,
+      `./content/final${YtCh}.mp4`,
       ytData.title,
       ytData.caption,
-      `./thumbnails/chapter${YtCh}/${YtVerse}/covernk.png`,
+      `./thumbnails/${YtCh}/cover.png`,
     )
     if (ytRes) {
       pm._load()
@@ -85,11 +63,7 @@ async function runner() {
   if (minValue === currentInsta) {
     // INSTA UPLOAD
     try {
-      instaCreationID = await uploadToInstagram(
-        instaData.caption,
-        instaCh,
-        instaVerse,
-      )
+      instaCreationID = await uploadToInstagram(instaData.caption, instaCh)
     } catch (err) {
       console.log('❌ Error uploading to Instagram:', err)
     }
@@ -103,7 +77,7 @@ async function runner() {
       videoIdFB = await uploadReel(
         pageAccessTokenFB,
         pageIdFB,
-        `./content/final${FBCh}-${FBVerse}-1.mp4`,
+        `./content/final${FBCh}.mp4`,
         fbData.caption,
       )
     } catch (err) {

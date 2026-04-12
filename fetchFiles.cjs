@@ -16,7 +16,7 @@ async function downloadVideo(FILE_PATH, OUTPUT_FILE) {
           Accept: 'application/vnd.github.v3.raw', // 👈 binary response
         },
         responseType: 'arraybuffer', // 👈 important
-      }
+      },
     )
 
     fs.writeFileSync(OUTPUT_FILE, Buffer.from(res.data))

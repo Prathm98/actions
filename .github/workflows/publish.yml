@@ -1,11 +1,11 @@
-name: Daily Publish
+name: Daily Publish DB
 
 on:
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '0 6 * * *'
   push:
     branches:
-      - insta
+      - insta-db
   workflow_dispatch:
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout main repo
         uses: actions/checkout@v4
         with:
-          ref: insta
+          ref: insta-db
 
       - uses: actions/setup-node@v4
         with:
@@ -29,7 +29,7 @@ jobs:
         env:
           GIT_PAT: ${{secrets.GIT_PAT }}
           GIT_REPO: ${{secrets.GIT_REPO }}
-          GIT_BRANCH: ${{secrets.GIT_BRANCH }}
+          GIT_BRANCH: ${{secrets.GIT_BRANCH_DB }}
         with:
           script: |
             const run = require('./actions.cjs')
@@ -41,7 +41,7 @@ jobs:
           git config --local user.name "Prathmesh Wakodikar"
           git add .
           git commit -m "Published Videos"|| echo "No changes to commit"
-          git push origin HEAD:insta
+          git push origin HEAD:insta-db
 
       - name: Decode credentials
         run: |
@@ -49,16 +49,16 @@ jobs:
           echo "$YT_TOKEN" | base64 -d > token.json
         env:
           YT_CRED: ${{ secrets.YT_CRED }}
-          YT_TOKEN: ${{ secrets.YT_TOKEN }}
+          YT_TOKEN: ${{ secrets.YT_TOKEN_DB }}
 
       - name: Publish
         env:
           GIT_PAT: ${{secrets.GIT_PAT }}
           GIT_REPO: ${{secrets.GIT_REPO }}
-          GIT_BRANCH: ${{secrets.GIT_BRANCH }}
-          INSTA_USERID: ${{secrets.INSTA_USERID }}
-          FB_PAGEID: ${{secrets.FB_PAGEID }}
-          INSTA_SECRETE: ${{secrets.INSTA_SECRETE }}
+          GIT_BRANCH: ${{secrets.GIT_BRANCH_DB }}
+          INSTA_USERID: ${{secrets.INSTA_USERID_DB }}
+          FB_PAGEID: ${{secrets.FB_PAGEID_DB }}
+          INSTA_SECRETE: ${{secrets.INSTA_SECRETE_DB }}
           FB_TOKEN: ${{secrets.FB_TOKEN }}
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
@@ -70,7 +70,7 @@ jobs:
           git config --local user.name "Prathmesh Wakodikar"
           git add .
           git commit -m "Updated status"|| echo "No changes to commit"
-          git push origin HEAD:insta
+          git push origin HEAD:insta-db
 
           # echo "${{ secrets.GIT_PAT }}" | gh auth login --with-token
 

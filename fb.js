@@ -19,7 +19,7 @@ async function getPageAccessToken(access_token, page_id) {
   } catch (err) {
     console.error(
       '❌ Error fetching Page Access Token:',
-      err.response?.data || err.message
+      err.response?.data || err.message,
     )
     throw err
   }
@@ -37,7 +37,7 @@ async function uploadReel(pageToken, pageId, videoFilePath, caption) {
     const startRes = await axios.post(
       `https://graph-video.facebook.com/v23.0/${pageId}/video_reels`,
       form,
-      { headers: form.getHeaders() }
+      { headers: form.getHeaders() },
     )
 
     const { video_id, upload_url } = startRes.data
@@ -66,7 +66,7 @@ async function uploadReel(pageToken, pageId, videoFilePath, caption) {
         description: caption,
         access_token: pageToken,
         video_state: 'PUBLISHED',
-      }
+      },
     )
 
     return video_id
@@ -112,7 +112,7 @@ async function checkVideoStatus(VIDEO_ID, PAGE_TOKEN, pm, currentFB) {
     } catch (err) {
       console.log(
         '❌ FB Error checking status:',
-        err.response?.data || err.message
+        err.response?.data || err.message,
       )
       clearInterval(intervalId)
       process.exit(1)

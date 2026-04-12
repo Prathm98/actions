@@ -1,4 +1,4 @@
-name: Refresh Token
+name: Refresh Token DB
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout main repo
         uses: actions/checkout@v4
         with:
-          ref: insta
+          ref: insta-db
 
       - uses: actions/setup-node@v4
         with:
@@ -30,7 +30,7 @@ jobs:
           echo "$YT_TOKEN" | base64 -d > token.json
         env:
           YT_CRED: ${{ secrets.YT_CRED }}
-          YT_TOKEN: ${{ secrets.YT_TOKEN }}
+          YT_TOKEN: ${{ secrets.YT_TOKEN_DB }}
 
       - name: Generate Token
         uses: actions/github-script@v6
@@ -67,4 +67,4 @@ jobs:
         run: |
           echo "${{ secrets.GIT_PAT }}" | gh auth login --with-token
 
-          base64 -w0 token.json | gh secret set YT_TOKEN
+          base64 -w0 token.json | gh secret set YT_TOKEN_DB

@@ -6,14 +6,14 @@ import ProgressManager from './ProgressManager.cjs'
 const ACCESS_TOKEN = process.env.INSTA_SECRETE
 const IG_USER_ID = process.env.INSTA_USERID
 
-async function uploadToInstagram(captionText, ch, verse) {
+async function uploadToInstagram(captionText, ch) {
   const caption = captionText
 
   // Step 1: Create media container
   const form = new FormData()
   form.append(
     'video_url',
-    `https://raw.githubusercontent.com/Prathm98/actions/refs/heads/insta/content/final${ch}-${verse}-1.mp4`
+    `https://raw.githubusercontent.com/Prathm98/actions/refs/heads/insta-db/content/final${ch}.mp4`,
   )
   form.append('media_type', 'REELS')
   form.append('caption', caption)
@@ -30,7 +30,7 @@ async function uploadToInstagram(captionText, ch, verse) {
   } catch (err) {
     console.error(
       '❌ Error creating media container:',
-      err.response?.data || err.message
+      err.response?.data || err.message,
     )
     return
   }
@@ -72,7 +72,7 @@ async function publishToInstagram(creationId, pm, currentInsta) {
         } catch (err) {
           console.log(
             '❌ Insta Error publishing media:',
-            err.response?.data || err.message
+            err.response?.data || err.message,
           )
           process.exit(1)
           return false
@@ -81,7 +81,7 @@ async function publishToInstagram(creationId, pm, currentInsta) {
         clearInterval(intervalId)
         console.log(
           '❌ Insta Upload failed or timed out, not publishing.',
-          res.data
+          res.data,
         )
         process.exit(1)
         return false
@@ -90,7 +90,7 @@ async function publishToInstagram(creationId, pm, currentInsta) {
       clearInterval(intervalId)
       console.log(
         '❌ Insta Error checking status:',
-        err.response?.data || err.message
+        err.response?.data || err.message,
       )
       process.exit(1)
       return false

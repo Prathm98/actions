@@ -3,11 +3,6 @@ const path = require('path')
 
 const FILE_PATH = path.join(__dirname, 'progress.json')
 
-// Verse counts per chapter (Bhagavad Gita)
-const VERSES_PER_CHAPTER = [
-  47, 72, 43, 42, 29, 47, 30, 28, 34, 42, 55, 20, 35, 27, 20, 24, 28, 78,
-]
-
 class ProgressManager {
   constructor(filePath = FILE_PATH) {
     this.filePath = filePath
@@ -60,18 +55,6 @@ class ProgressManager {
   updateCurrentFB(value) {
     this.data.currentFB = value
     this._save()
-  }
-
-  // ✅ Convert verse number → chapter & verse
-  getChapterAndVerse(globalNumber) {
-    let remaining = globalNumber
-    for (let ch = 0; ch < VERSES_PER_CHAPTER.length; ch++) {
-      if (remaining <= VERSES_PER_CHAPTER[ch]) {
-        return { ch: ch + 1, verse: remaining }
-      }
-      remaining -= VERSES_PER_CHAPTER[ch]
-    }
-    return null // if number > 700
   }
 }
 

@@ -15,10 +15,9 @@ async function run() {
     }
   }
 
-  const getFiles = async (current, i) => {
-    const { ch: chapter, verse } = pm.getChapterAndVerse(current)
-    const filePath = `content/final${chapter}/final${verse}-${i}.mp4`
-    const outputFile = `content/final${chapter}-${verse}-${i}.mp4`
+  const getFiles = async (current) => {
+    const filePath = `content/outputc${current}.mp4`
+    const outputFile = `content/final${current}.mp4`
 
     console.log('processing', filePath)
 
