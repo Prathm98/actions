@@ -21,4 +21,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "${{ secrets.FB_TOKEN }}"
+          echo "test: ||${{ secrets.FB_TOKEN }}||"
