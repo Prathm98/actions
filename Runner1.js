@@ -130,6 +130,9 @@ async function runner() {
     // }
   }
 
+  cm._load()
+  cm.updateCurrent(counter + 1)
+
   deleteVideosByNumber(`./content${currentSeries}`, minValue - 5, pm)
 }
 
