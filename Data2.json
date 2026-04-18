@@ -1,0 +1,1409 @@
+[
+  {
+    "id": 1,
+    "country": "Japan",
+    "title": "Vending Machine Nation",
+    "summary": "Japan has over 4 million vending machines selling everything from drinks to hot meals.",
+    "fact_hi": "जापान में 40 लाख से ज्यादा वेंडिंग मशीन हैं, जो ड्रिंक्स से लेकर गर्म खाना तक बेचती हैं।",
+    "hashtags": [
+      "#Japan",
+      "#Tokyo",
+      "#VendingMachines",
+      "#WeirdJapan",
+      "#TechCulture",
+      "#Automation",
+      "#DidYouKnow",
+      "#FunFacts",
+      "#ViralFacts",
+      "#Shorts",
+      "#Reels"
+    ]
+  },
+  {
+    "id": 2,
+    "country": "Canada",
+    "title": "Land of Lakes",
+    "summary": "Canada has more lakes than all other countries combined.",
+    "fact_hi": "कनाडा में दुनिया के बाकी सभी देशों को मिलाकर जितनी झीलें हैं, उससे भी ज्यादा झीलें हैं।",
+    "hashtags": [
+      "#Canada",
+      "#NatureLovers",
+      "#Lakes",
+      "#GeographyFacts",
+      "#EarthFacts",
+      "#TravelCanada",
+      "#DidYouKnow",
+      "#AmazingWorld",
+      "#Shorts",
+      "#Reels"
+    ]
+  },
+  {
+    "id": 3,
+    "country": "Australia",
+    "title": "Kangaroo Majority",
+    "summary": "There are more kangaroos in Australia than people.",
+    "fact_hi": "ऑस्ट्रेलिया में इंसानों से ज्यादा कंगारू पाए जाते हैं।",
+    "hashtags": [
+      "#Australia",
+      "#Kangaroo",
+      "#WildlifeFacts",
+      "#Outback",
+      "#Nature",
+      "#AnimalFacts",
+      "#DidYouKnow",
+      "#Shorts",
+      "#Reels",
+      "#Viral"
+    ]
+  },
+  {
+    "id": 4,
+    "country": "India",
+    "title": "Massive Postal Network",
+    "summary": "India has the largest postal network in the world.",
+    "fact_hi": "भारत में दुनिया का सबसे बड़ा डाक नेटवर्क है।",
+    "hashtags": [
+      "#India",
+      "#IncredibleIndia",
+      "#PostalNetwork",
+      "#IndianFacts",
+      "#Bharat",
+      "#Logistics",
+      "#DidYouKnow",
+      "#Shorts",
+      "#Reels",
+      "#ViralIndia"
+    ]
+  },
+  {
+    "id": 5,
+    "country": "Switzerland",
+    "title": "Bunkers for All",
+    "summary": "Switzerland has enough bunkers to shelter its entire population.",
+    "fact_hi": "स्विट्जरलैंड में इतनी बंकर सुविधाएं हैं कि पूरी आबादी को सुरक्षित रखा जा सकता है।",
+    "hashtags": [
+      "#Switzerland",
+      "#Safety",
+      "#Bunkers",
+      "#EuropeFacts",
+      "#SwissAlps",
+      "#PreparedNation",
+      "#DidYouKnow",
+      "#Shorts",
+      "#Reels"
+    ]
+  },
+  {
+    "id": 6,
+    "country": "Brazil",
+    "title": "Amazon Giant",
+    "summary": "Brazil is home to the Amazon Rainforest, the largest rainforest on Earth.",
+    "fact_hi": "ब्राज़ील में अमेज़न रेनफॉरेस्ट है, जो दुनिया का सबसे बड़ा जंगल है।",
+    "hashtags": [
+      "#Brazil",
+      "#AmazonRainforest",
+      "#NatureFacts",
+      "#Jungle",
+      "#EarthLungs",
+      "#Wildlife",
+      "#DidYouKnow",
+      "#Shorts",
+      "#Reels",
+      "#Viral"
+    ]
+  },
+  {
+    "id": 7,
+    "country": "Norway",
+    "title": "Midnight Sun",
+    "summary": "In parts of Norway, the sun never sets during summer.",
+    "fact_hi": "नॉर्वे के कुछ हिस्सों में गर्मियों में सूरज कभी नहीं डूबता।",
+    "hashtags": [
+      "#Norway",
+      "#MidnightSun",
+      "#ArcticCircle",
+      "#NatureWonder",
+      "#TravelEurope",
+      "#SkyMagic",
+      "#DidYouKnow",
+      "#Shorts",
+      "#Reels"
+    ]
+  },
+  {
+    "id": 8,
+    "country": "France",
+    "title": "Cheese Kingdom",
+    "summary": "France produces over 1,000 varieties of cheese.",
+    "fact_hi": "फ्रांस में 1000 से ज्यादा तरह के चीज़ बनाए जाते हैं।",
+    "hashtags": [
+      "#France",
+      "#CheeseLovers",
+      "#FrenchFood",
+      "#Gourmet",
+      "#EuropeCuisine",
+      "#FoodFacts",
+      "#DidYouKnow",
+      "#Shorts",
+      "#Reels"
+    ]
+  },
+  {
+    "id": 9,
+    "country": "Mexico",
+    "title": "Birthplace of Chocolate",
+    "summary": "Chocolate was first developed in ancient Mexico.",
+    "fact_hi": "चॉकलेट की शुरुआत प्राचीन मेक्सिको में हुई थी।",
+    "hashtags": [
+      "#Mexico",
+      "#Chocolate",
+      "#FoodHistory",
+      "#AncientCivilization",
+      "#Cocoa",
+      "#DidYouKnow",
+      "#Shorts",
+      "#Reels"
+    ]
+  },
+  {
+    "id": 10,
+    "country": "UAE",
+    "title": "Sky-High Building",
+    "summary": "The Burj Khalifa in Dubai is the tallest building in the world.",
+    "fact_hi": "दुबई का बुर्ज खलीफा दुनिया की सबसे ऊंची इमारत है।",
+    "hashtags": [
+      "#Dubai",
+      "#BurjKhalifa",
+      "#UAE",
+      "#Skyscraper",
+      "#WorldRecord",
+      "#LuxuryLife",
+      "#DidYouKnow",
+      "#Shorts",
+      "#Reels"
+    ]
+  },
+
+  {
+    "id": 11,
+    "country": "Iceland",
+    "title": "Mosquito-Free Land",
+    "summary": "Iceland is one of the few countries with no mosquitoes.",
+    "fact_hi": "आइसलैंड उन देशों में से एक है जहां मच्छर नहीं पाए जाते।",
+    "hashtags": [
+      "#Iceland",
+      "#NoMosquitoes",
+      "#WeirdFacts",
+      "#Nature",
+      "#ColdCountry",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 12,
+    "country": "China",
+    "title": "Great Wall Length",
+    "summary": "The Great Wall stretches over 21,000 km.",
+    "fact_hi": "महान दीवार 21,000 किमी से ज्यादा लंबी है।",
+    "hashtags": [
+      "#China",
+      "#GreatWall",
+      "#HistoryFacts",
+      "#AncientWonder",
+      "#TravelAsia",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 13,
+    "country": "Russia",
+    "title": "Largest Nation",
+    "summary": "Russia is the largest country in the world.",
+    "fact_hi": "रूस दुनिया का सबसे बड़ा देश है।",
+    "hashtags": [
+      "#Russia",
+      "#LargestCountry",
+      "#Geography",
+      "#WorldMap",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 14,
+    "country": "USA",
+    "title": "Alaska Coastline",
+    "summary": "Alaska has more coastline than all other U.S. states combined.",
+    "fact_hi": "अलास्का की तटरेखा बाकी सभी अमेरिकी राज्यों से ज्यादा है।",
+    "hashtags": [
+      "#USA",
+      "#Alaska",
+      "#GeographyFacts",
+      "#Coastline",
+      "#Nature",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 15,
+    "country": "Italy",
+    "title": "UNESCO Leader",
+    "summary": "Italy has the most UNESCO World Heritage Sites.",
+    "fact_hi": "इटली में सबसे ज्यादा यूनेस्को साइट्स हैं।",
+    "hashtags": [
+      "#Italy",
+      "#UNESCO",
+      "#Heritage",
+      "#History",
+      "#TravelEurope",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+
+  {
+    "id": 16,
+    "country": "South Korea",
+    "title": "Internet Speed King",
+    "summary": "South Korea has one of the fastest internet speeds globally.",
+    "fact_hi": "दक्षिण कोरिया में दुनिया की सबसे तेज इंटरनेट स्पीड में से एक है।",
+    "hashtags": [
+      "#SouthKorea",
+      "#FastInternet",
+      "#Tech",
+      "#DigitalWorld",
+      "#Innovation",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 17,
+    "country": "Egypt",
+    "title": "Ancient Wonders",
+    "summary": "The pyramids are over 4,500 years old.",
+    "fact_hi": "पिरामिड 4500 साल से भी ज्यादा पुराने हैं।",
+    "hashtags": [
+      "#Egypt",
+      "#Pyramids",
+      "#AncientHistory",
+      "#WondersOfWorld",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 18,
+    "country": "Netherlands",
+    "title": "Below Sea Level",
+    "summary": "A third of the Netherlands lies below sea level.",
+    "fact_hi": "नीदरलैंड का एक-तिहाई हिस्सा समुद्र स्तर से नीचे है।",
+    "hashtags": [
+      "#Netherlands",
+      "#SeaLevel",
+      "#Engineering",
+      "#WaterControl",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 19,
+    "country": "Saudi Arabia",
+    "title": "No Rivers",
+    "summary": "Saudi Arabia has no permanent rivers.",
+    "fact_hi": "सऊदी अरब में कोई स्थायी नदी नहीं है।",
+    "hashtags": [
+      "#SaudiArabia",
+      "#DesertLife",
+      "#Geography",
+      "#MiddleEast",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 20,
+    "country": "Finland",
+    "title": "Happiest Country",
+    "summary": "Finland is often ranked the happiest country.",
+    "fact_hi": "फिनलैंड को दुनिया का सबसे खुशहाल देश माना जाता है।",
+    "hashtags": [
+      "#Finland",
+      "#Happiness",
+      "#Lifestyle",
+      "#Nordic",
+      "#Wellbeing",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+
+  {
+    "id": 21,
+    "country": "Spain",
+    "title": "Tomato Festival",
+    "summary": "La Tomatina is the world’s biggest tomato fight.",
+    "fact_hi": "ला टोमाटिना दुनिया का सबसे बड़ा टमाटर युद्ध है।",
+    "hashtags": [
+      "#Spain",
+      "#LaTomatina",
+      "#Festival",
+      "#FunEvents",
+      "#FoodFight",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 22,
+    "country": "Thailand",
+    "title": "Longest City Name",
+    "summary": "Bangkok has one of the longest city names.",
+    "fact_hi": "बैंकॉक का नाम दुनिया के सबसे लंबे नामों में से एक है।",
+    "hashtags": [
+      "#Thailand",
+      "#Bangkok",
+      "#FunFact",
+      "#CityNames",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 23,
+    "country": "Turkey",
+    "title": "Two Continents",
+    "summary": "Turkey spans Europe and Asia.",
+    "fact_hi": "तुर्की यूरोप और एशिया दोनों में फैला है।",
+    "hashtags": [
+      "#Turkey",
+      "#EuropeAsia",
+      "#Geography",
+      "#CultureMix",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 24,
+    "country": "Argentina",
+    "title": "End of the World City",
+    "summary": "Ushuaia is the southernmost city.",
+    "fact_hi": "उशुआइया दुनिया का सबसे दक्षिणी शहर है।",
+    "hashtags": [
+      "#Argentina",
+      "#Ushuaia",
+      "#EndOfWorld",
+      "#Travel",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 25,
+    "country": "Greece",
+    "title": "Island Nation",
+    "summary": "Greece has over 6,000 islands.",
+    "fact_hi": "ग्रीस में 6000 से ज्यादा द्वीप हैं।",
+    "hashtags": [
+      "#Greece",
+      "#Islands",
+      "#TravelEurope",
+      "#BeachLife",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+
+  {
+    "id": 26,
+    "country": "Germany",
+    "title": "No Speed Limits",
+    "summary": "Some Autobahn sections have no speed limit.",
+    "fact_hi": "ऑटोबान के कुछ हिस्सों में स्पीड लिमिट नहीं है।",
+    "hashtags": [
+      "#Germany",
+      "#Autobahn",
+      "#Speed",
+      "#Cars",
+      "#Driving",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 27,
+    "country": "New Zealand",
+    "title": "Sheep Nation",
+    "summary": "There are far more sheep than people.",
+    "fact_hi": "यहां इंसानों से ज्यादा भेड़ें हैं।",
+    "hashtags": [
+      "#NewZealand",
+      "#Sheep",
+      "#Nature",
+      "#Wildlife",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 28,
+    "country": "Singapore",
+    "title": "Chewing Gum Ban",
+    "summary": "Chewing gum is restricted in Singapore.",
+    "fact_hi": "सिंगापुर में च्युइंग गम पर प्रतिबंध है।",
+    "hashtags": [
+      "#Singapore",
+      "#Rules",
+      "#CleanCity",
+      "#Asia",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 29,
+    "country": "South Africa",
+    "title": "Three Capitals",
+    "summary": "It has three capital cities.",
+    "fact_hi": "यहां तीन राजधानियां हैं।",
+    "hashtags": [
+      "#SouthAfrica",
+      "#Capitals",
+      "#Geography",
+      "#Africa",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 30,
+    "country": "Sweden",
+    "title": "Cashless Future",
+    "summary": "Sweden is becoming cashless.",
+    "fact_hi": "स्वीडन तेजी से कैशलेस बन रहा है।",
+    "hashtags": [
+      "#Sweden",
+      "#Cashless",
+      "#Digital",
+      "#Fintech",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+
+  {
+    "id": 31,
+    "country": "Denmark",
+    "title": "Oldest Flag",
+    "summary": "It has the oldest national flag.",
+    "fact_hi": "यहां दुनिया का सबसे पुराना झंडा है।",
+    "hashtags": [
+      "#Denmark",
+      "#Flag",
+      "#History",
+      "#Europe",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 32,
+    "country": "Chile",
+    "title": "Longest Country",
+    "summary": "Chile is extremely long north to south.",
+    "fact_hi": "चिली उत्तर से दक्षिण तक बहुत लंबा देश है।",
+    "hashtags": [
+      "#Chile",
+      "#Geography",
+      "#LongCountry",
+      "#SouthAmerica",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 33,
+    "country": "Indonesia",
+    "title": "Island Giant",
+    "summary": "It has 17,000+ islands.",
+    "fact_hi": "यहां 17,000 से ज्यादा द्वीप हैं।",
+    "hashtags": [
+      "#Indonesia",
+      "#Islands",
+      "#Archipelago",
+      "#Asia",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 34,
+    "country": "Philippines",
+    "title": "Texting Capital",
+    "summary": "It is known for heavy texting usage.",
+    "fact_hi": "यह टेक्स्टिंग के लिए प्रसिद्ध है।",
+    "hashtags": [
+      "#Philippines",
+      "#Texting",
+      "#MobileCulture",
+      "#Tech",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 35,
+    "country": "Colombia",
+    "title": "Coffee Power",
+    "summary": "One of the top coffee producers.",
+    "fact_hi": "यह प्रमुख कॉफी उत्पादकों में से एक है।",
+    "hashtags": [
+      "#Colombia",
+      "#Coffee",
+      "#Cafe",
+      "#Agriculture",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+
+  {
+    "id": 36,
+    "country": "Peru",
+    "title": "Machu Picchu",
+    "summary": "Home to Machu Picchu.",
+    "fact_hi": "यहां माचू पिच्चू है।",
+    "hashtags": [
+      "#Peru",
+      "#MachuPicchu",
+      "#AncientCity",
+      "#Travel",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 37,
+    "country": "Vatican City",
+    "title": "Smallest Nation",
+    "summary": "Smallest country in the world.",
+    "fact_hi": "दुनिया का सबसे छोटा देश।",
+    "hashtags": [
+      "#Vatican",
+      "#SmallestCountry",
+      "#Europe",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 38,
+    "country": "Monaco",
+    "title": "Millionaire Hub",
+    "summary": "High concentration of millionaires.",
+    "fact_hi": "यहां बहुत अधिक अमीर लोग रहते हैं।",
+    "hashtags": [
+      "#Monaco",
+      "#Luxury",
+      "#Millionaires",
+      "#RichLife",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 39,
+    "country": "Madagascar",
+    "title": "Unique Wildlife",
+    "summary": "Most wildlife exists nowhere else.",
+    "fact_hi": "यहां के जीव दुनिया में कहीं और नहीं मिलते।",
+    "hashtags": [
+      "#Madagascar",
+      "#Wildlife",
+      "#Unique",
+      "#Nature",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 40,
+    "country": "Greenland",
+    "title": "Largest Island",
+    "summary": "World’s largest island.",
+    "fact_hi": "दुनिया का सबसे बड़ा द्वीप।",
+    "hashtags": [
+      "#Greenland",
+      "#Island",
+      "#Arctic",
+      "#Geography",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+
+  {
+    "id": 41,
+    "country": "Antarctica",
+    "title": "Coldest Place",
+    "summary": "Coldest place on Earth.",
+    "fact_hi": "पृथ्वी का सबसे ठंडा स्थान।",
+    "hashtags": [
+      "#Antarctica",
+      "#Cold",
+      "#Extreme",
+      "#Ice",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 42,
+    "country": "Nepal",
+    "title": "Everest Home",
+    "summary": "Mount Everest is located here.",
+    "fact_hi": "यहां माउंट एवरेस्ट है।",
+    "hashtags": [
+      "#Nepal",
+      "#Everest",
+      "#Mountains",
+      "#Himalaya",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 43,
+    "country": "Bhutan",
+    "title": "Happiness Index",
+    "summary": "Measures Gross National Happiness.",
+    "fact_hi": "यह देश खुशी को मापता है।",
+    "hashtags": [
+      "#Bhutan",
+      "#Happiness",
+      "#Lifestyle",
+      "#Peaceful",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 44,
+    "country": "Kenya",
+    "title": "Safari Capital",
+    "summary": "Famous for wildlife safaris.",
+    "fact_hi": "यह सफारी के लिए प्रसिद्ध है।",
+    "hashtags": [
+      "#Kenya",
+      "#Safari",
+      "#Wildlife",
+      "#Africa",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 45,
+    "country": "Cuba",
+    "title": "Vintage Cars",
+    "summary": "Known for classic old cars.",
+    "fact_hi": "यह पुराने क्लासिक कारों के लिए प्रसिद्ध है।",
+    "hashtags": [
+      "#Cuba",
+      "#VintageCars",
+      "#Classic",
+      "#Culture",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+
+  {
+    "id": 46,
+    "country": "Iran",
+    "title": "Ancient Persia",
+    "summary": "Iran was historically known as Persia.",
+    "fact_hi": "ईरान को पहले पर्शिया कहा जाता था।",
+    "hashtags": [
+      "#Iran",
+      "#Persia",
+      "#History",
+      "#Ancient",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 47,
+    "country": "Mongolia",
+    "title": "Least Dense",
+    "summary": "One of the least densely populated countries.",
+    "fact_hi": "यह सबसे कम जनसंख्या घनत्व वाले देशों में से एक है।",
+    "hashtags": [
+      "#Mongolia",
+      "#Population",
+      "#EmptyLand",
+      "#Asia",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 48,
+    "country": "Poland",
+    "title": "Forest Land",
+    "summary": "Nearly 30% of Poland is covered by forests.",
+    "fact_hi": "पोलैंड का लगभग 30% हिस्सा जंगलों से ढका है।",
+    "hashtags": [
+      "#Poland",
+      "#Forests",
+      "#Nature",
+      "#Europe",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 49,
+    "country": "Vietnam",
+    "title": "Motorbike Nation",
+    "summary": "Motorbikes dominate transportation.",
+    "fact_hi": "यहां मोटरसाइकिल सबसे ज्यादा उपयोग होती हैं।",
+    "hashtags": [
+      "#Vietnam",
+      "#Motorbikes",
+      "#Traffic",
+      "#Asia",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 50,
+    "country": "Ethiopia",
+    "title": "Different Calendar",
+    "summary": "Ethiopia follows a different calendar system.",
+    "fact_hi": "इथियोपिया अलग कैलेंडर प्रणाली अपनाता है।",
+    "hashtags": [
+      "#Ethiopia",
+      "#Calendar",
+      "#Culture",
+      "#Africa",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 51,
+    "country": "Malaysia",
+    "title": "Twin Towers",
+    "summary": "Petronas Towers were once the tallest buildings in the world.",
+    "fact_hi": "पेट्रोनास टावर्स कभी दुनिया की सबसे ऊंची इमारतें थीं।",
+    "hashtags": [
+      "#Malaysia",
+      "#PetronasTowers",
+      "#Skyscraper",
+      "#KualaLumpur",
+      "#Architecture",
+      "#DidYouKnow",
+      "#Shorts",
+      "#Reels"
+    ]
+  },
+  {
+    "id": 52,
+    "country": "Pakistan",
+    "title": "World’s Highest ATM",
+    "summary": "Pakistan has the highest ATM in the world at Khunjerab Pass.",
+    "fact_hi": "पाकिस्तान में दुनिया का सबसे ऊंचाई पर स्थित ATM है।",
+    "hashtags": [
+      "#Pakistan",
+      "#ATM",
+      "#KhunjerabPass",
+      "#WorldRecord",
+      "#Mountains",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 53,
+    "country": "Bangladesh",
+    "title": "River Country",
+    "summary": "Bangladesh has over 700 rivers.",
+    "fact_hi": "बांग्लादेश में 700 से ज्यादा नदियां हैं।",
+    "hashtags": [
+      "#Bangladesh",
+      "#Rivers",
+      "#Geography",
+      "#Nature",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 54,
+    "country": "Sri Lanka",
+    "title": "Tea Exporter",
+    "summary": "Sri Lanka is one of the largest tea exporters.",
+    "fact_hi": "श्रीलंका दुनिया के सबसे बड़े चाय निर्यातकों में से एक है।",
+    "hashtags": [
+      "#SriLanka",
+      "#Tea",
+      "#CeylonTea",
+      "#Agriculture",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 55,
+    "country": "Afghanistan",
+    "title": "Ancient Crossroads",
+    "summary": "Afghanistan has been a crossroads of civilizations for centuries.",
+    "fact_hi": "अफगानिस्तान सदियों से सभ्यताओं का केंद्र रहा है।",
+    "hashtags": [
+      "#Afghanistan",
+      "#History",
+      "#SilkRoad",
+      "#Ancient",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+
+  {
+    "id": 56,
+    "country": "Kazakhstan",
+    "title": "Largest Landlocked",
+    "summary": "Kazakhstan is the largest landlocked country.",
+    "fact_hi": "कजाखस्तान दुनिया का सबसे बड़ा लैंडलॉक्ड देश है।",
+    "hashtags": [
+      "#Kazakhstan",
+      "#Geography",
+      "#Landlocked",
+      "#Asia",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 57,
+    "country": "Uzbekistan",
+    "title": "Double Landlocked",
+    "summary": "Uzbekistan is one of only two double landlocked countries.",
+    "fact_hi": "उज्बेकिस्तान डबल लैंडलॉक्ड देशों में से एक है।",
+    "hashtags": [
+      "#Uzbekistan",
+      "#Geography",
+      "#RareFact",
+      "#Asia",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 58,
+    "country": "Iran",
+    "title": "World’s Oldest Wine",
+    "summary": "Evidence of some of the oldest wine production was found in Iran.",
+    "fact_hi": "ईरान में दुनिया की सबसे पुरानी वाइन के प्रमाण मिले हैं।",
+    "hashtags": [
+      "#Iran",
+      "#WineHistory",
+      "#Ancient",
+      "#Culture",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 59,
+    "country": "Iraq",
+    "title": "Cradle of Civilization",
+    "summary": "Iraq is part of Mesopotamia, the cradle of civilization.",
+    "fact_hi": "इराक मेसोपोटामिया का हिस्सा है, जिसे सभ्यता का जन्मस्थान कहा जाता है।",
+    "hashtags": [
+      "#Iraq",
+      "#Mesopotamia",
+      "#History",
+      "#Civilization",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 60,
+    "country": "Israel",
+    "title": "Lowest Point",
+    "summary": "The Dead Sea is the lowest point on Earth.",
+    "fact_hi": "डेड सी पृथ्वी का सबसे निचला स्थान है।",
+    "hashtags": [
+      "#Israel",
+      "#DeadSea",
+      "#Geography",
+      "#Nature",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+
+  {
+    "id": 61,
+    "country": "Jordan",
+    "title": "Petra Wonder",
+    "summary": "Petra is one of the New Seven Wonders of the World.",
+    "fact_hi": "पेट्रा दुनिया के नए सात अजूबों में से एक है।",
+    "hashtags": [
+      "#Jordan",
+      "#Petra",
+      "#WonderOfWorld",
+      "#Travel",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 62,
+    "country": "Lebanon",
+    "title": "Ancient Cities",
+    "summary": "Lebanon has some of the oldest continuously inhabited cities.",
+    "fact_hi": "लेबनान में दुनिया के सबसे पुराने बसे हुए शहर हैं।",
+    "hashtags": [
+      "#Lebanon",
+      "#AncientCities",
+      "#History",
+      "#MiddleEast",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 63,
+    "country": "Qatar",
+    "title": "Rich Nation",
+    "summary": "Qatar has one of the highest GDP per capita.",
+    "fact_hi": "कतर का प्रति व्यक्ति GDP दुनिया में सबसे अधिक है।",
+    "hashtags": [
+      "#Qatar",
+      "#Wealth",
+      "#GDP",
+      "#Luxury",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 64,
+    "country": "Kuwait",
+    "title": "Oil Rich",
+    "summary": "Kuwait has large oil reserves.",
+    "fact_hi": "कुवैत के पास बड़े तेल भंडार हैं।",
+    "hashtags": [
+      "#Kuwait",
+      "#Oil",
+      "#Energy",
+      "#MiddleEast",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 65,
+    "country": "Oman",
+    "title": "Frankincense Trade",
+    "summary": "Oman was famous for frankincense trade.",
+    "fact_hi": "ओमान लोबान के व्यापार के लिए प्रसिद्ध था।",
+    "hashtags": [
+      "#Oman",
+      "#Trade",
+      "#History",
+      "#ArabCulture",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+
+  {
+    "id": 66,
+    "country": "Morocco",
+    "title": "Blue City",
+    "summary": "Chefchaouen is known as the blue city.",
+    "fact_hi": "शेफचाउएन को नीला शहर कहा जाता है।",
+    "hashtags": [
+      "#Morocco",
+      "#BlueCity",
+      "#Travel",
+      "#Africa",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 67,
+    "country": "Algeria",
+    "title": "Largest in Africa",
+    "summary": "Algeria is the largest country in Africa.",
+    "fact_hi": "अल्जीरिया अफ्रीका का सबसे बड़ा देश है।",
+    "hashtags": ["#Algeria", "#Africa", "#Geography", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 68,
+    "country": "Nigeria",
+    "title": "Most Populous Africa",
+    "summary": "Nigeria is the most populous African country.",
+    "fact_hi": "नाइजीरिया अफ्रीका का सबसे अधिक आबादी वाला देश है।",
+    "hashtags": ["#Nigeria", "#Population", "#Africa", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 69,
+    "country": "Ghana",
+    "title": "Gold Coast",
+    "summary": "Ghana was once called the Gold Coast.",
+    "fact_hi": "घाना को पहले गोल्ड कोस्ट कहा जाता था।",
+    "hashtags": [
+      "#Ghana",
+      "#GoldCoast",
+      "#History",
+      "#Africa",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 70,
+    "country": "Tanzania",
+    "title": "Kilimanjaro",
+    "summary": "Mount Kilimanjaro is the highest in Africa.",
+    "fact_hi": "किलिमंजारो अफ्रीका का सबसे ऊंचा पर्वत है।",
+    "hashtags": [
+      "#Tanzania",
+      "#Kilimanjaro",
+      "#Mountains",
+      "#Africa",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+
+  {
+    "id": 71,
+    "country": "Uganda",
+    "title": "Pearl of Africa",
+    "summary": "Uganda is called the Pearl of Africa.",
+    "fact_hi": "युगांडा को अफ्रीका का मोती कहा जाता है।",
+    "hashtags": [
+      "#Uganda",
+      "#PearlOfAfrica",
+      "#Nature",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 72,
+    "country": "Ecuador",
+    "title": "Equator Line",
+    "summary": "Ecuador is named after the equator.",
+    "fact_hi": "इक्वाडोर का नाम भूमध्य रेखा पर पड़ा है।",
+    "hashtags": ["#Ecuador", "#Equator", "#Geography", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 73,
+    "country": "Bolivia",
+    "title": "Salt Flats",
+    "summary": "Salar de Uyuni is the world’s largest salt flat.",
+    "fact_hi": "सालार दे उयूनी दुनिया का सबसे बड़ा नमक मैदान है।",
+    "hashtags": ["#Bolivia", "#SaltFlats", "#Nature", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 74,
+    "country": "Paraguay",
+    "title": "Two Languages",
+    "summary": "Most people speak both Spanish and Guarani.",
+    "fact_hi": "यहां लोग स्पेनिश और गुआरानी दोनों बोलते हैं।",
+    "hashtags": ["#Paraguay", "#Language", "#Culture", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 75,
+    "country": "Uruguay",
+    "title": "Early Digital Nation",
+    "summary": "Uruguay provides free laptops to students.",
+    "fact_hi": "उरुग्वे छात्रों को मुफ्त लैपटॉप देता है।",
+    "hashtags": ["#Uruguay", "#Education", "#Digital", "#DidYouKnow", "#Shorts"]
+  },
+
+  {
+    "id": 76,
+    "country": "Ireland",
+    "title": "No Snakes",
+    "summary": "Ireland has no native snakes.",
+    "fact_hi": "आयरलैंड में सांप नहीं पाए जाते।",
+    "hashtags": ["#Ireland", "#NoSnakes", "#Nature", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 77,
+    "country": "Portugal",
+    "title": "Oldest Bookstore",
+    "summary": "Lisbon has the world’s oldest bookstore.",
+    "fact_hi": "लिस्बन में दुनिया की सबसे पुरानी बुकस्टोर है।",
+    "hashtags": ["#Portugal", "#Books", "#History", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 78,
+    "country": "Belgium",
+    "title": "Waffle Fame",
+    "summary": "Belgium is famous for waffles.",
+    "fact_hi": "बेल्जियम वाफल्स के लिए प्रसिद्ध है।",
+    "hashtags": ["#Belgium", "#Waffles", "#Food", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 79,
+    "country": "Austria",
+    "title": "Music Legacy",
+    "summary": "Mozart was from Austria.",
+    "fact_hi": "मोज़ार्ट ऑस्ट्रिया से थे।",
+    "hashtags": [
+      "#Austria",
+      "#Mozart",
+      "#Music",
+      "#History",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 80,
+    "country": "Czech Republic",
+    "title": "Beer Lovers",
+    "summary": "Czechs drink the most beer per capita.",
+    "fact_hi": "यहां लोग सबसे ज्यादा बीयर पीते हैं।",
+    "hashtags": ["#CzechRepublic", "#Beer", "#Europe", "#DidYouKnow", "#Shorts"]
+  },
+
+  {
+    "id": 81,
+    "country": "Hungary",
+    "title": "Thermal Baths",
+    "summary": "Hungary has many natural thermal baths.",
+    "fact_hi": "हंगरी में कई प्राकृतिक गर्म पानी के स्नान स्थल हैं।",
+    "hashtags": [
+      "#Hungary",
+      "#ThermalBath",
+      "#Travel",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 82,
+    "country": "Romania",
+    "title": "Dracula Legend",
+    "summary": "Transylvania is linked to Dracula.",
+    "fact_hi": "ट्रांसिल्वेनिया ड्रैकुला से जुड़ा है।",
+    "hashtags": ["#Romania", "#Dracula", "#Myth", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 83,
+    "country": "Bulgaria",
+    "title": "Old Civilization",
+    "summary": "One of the oldest countries in Europe.",
+    "fact_hi": "यह यूरोप के सबसे पुराने देशों में से एक है।",
+    "hashtags": ["#Bulgaria", "#History", "#Europe", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 84,
+    "country": "Croatia",
+    "title": "Game of Thrones",
+    "summary": "Dubrovnik was used in Game of Thrones.",
+    "fact_hi": "डबरोवनिक का उपयोग गेम ऑफ थ्रोन्स में हुआ था।",
+    "hashtags": [
+      "#Croatia",
+      "#GameOfThrones",
+      "#Travel",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 85,
+    "country": "Slovenia",
+    "title": "Green Country",
+    "summary": "Over half of Slovenia is forest.",
+    "fact_hi": "स्लोवेनिया का आधे से ज्यादा हिस्सा जंगल है।",
+    "hashtags": ["#Slovenia", "#Green", "#Nature", "#DidYouKnow", "#Shorts"]
+  },
+
+  {
+    "id": 86,
+    "country": "Estonia",
+    "title": "Digital Society",
+    "summary": "Estonia offers e-residency.",
+    "fact_hi": "एस्टोनिया ई-रेजिडेंसी देता है।",
+    "hashtags": ["#Estonia", "#Digital", "#Tech", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 87,
+    "country": "Latvia",
+    "title": "Fast Internet",
+    "summary": "Latvia has high-speed internet.",
+    "fact_hi": "लातविया में तेज इंटरनेट है।",
+    "hashtags": ["#Latvia", "#Internet", "#Tech", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 88,
+    "country": "Lithuania",
+    "title": "Old Language",
+    "summary": "Lithuanian is one of the oldest languages.",
+    "fact_hi": "लिथुआनियाई सबसे पुरानी भाषाओं में से एक है।",
+    "hashtags": [
+      "#Lithuania",
+      "#Language",
+      "#History",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 89,
+    "country": "Luxembourg",
+    "title": "Rich Country",
+    "summary": "One of the richest countries per capita.",
+    "fact_hi": "यह प्रति व्यक्ति सबसे अमीर देशों में से एक है।",
+    "hashtags": ["#Luxembourg", "#Wealth", "#Europe", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 90,
+    "country": "Liechtenstein",
+    "title": "Tiny Nation",
+    "summary": "One of the smallest countries in Europe.",
+    "fact_hi": "यह यूरोप के सबसे छोटे देशों में से एक है।",
+    "hashtags": [
+      "#Liechtenstein",
+      "#SmallCountry",
+      "#Europe",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+
+  {
+    "id": 91,
+    "country": "Fiji",
+    "title": "Island Paradise",
+    "summary": "Fiji has over 300 islands.",
+    "fact_hi": "फिजी में 300 से ज्यादा द्वीप हैं।",
+    "hashtags": [
+      "#Fiji",
+      "#Islands",
+      "#Beach",
+      "#Paradise",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 92,
+    "country": "Papua New Guinea",
+    "title": "Language Diversity",
+    "summary": "Over 800 languages are spoken.",
+    "fact_hi": "यहां 800 से ज्यादा भाषाएं बोली जाती हैं।",
+    "hashtags": [
+      "#PapuaNewGuinea",
+      "#Languages",
+      "#Culture",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 93,
+    "country": "Samoa",
+    "title": "First Sunrise",
+    "summary": "One of the first places to see sunrise.",
+    "fact_hi": "यह सूर्योदय देखने के पहले स्थानों में से एक है।",
+    "hashtags": ["#Samoa", "#Sunrise", "#Pacific", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 94,
+    "country": "Tonga",
+    "title": "Royal Monarchy",
+    "summary": "Tonga has a monarchy system.",
+    "fact_hi": "टोंगा में राजशाही प्रणाली है।",
+    "hashtags": ["#Tonga", "#Monarchy", "#Culture", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 95,
+    "country": "Vanuatu",
+    "title": "Happiest Index",
+    "summary": "Ranks high in happiness index.",
+    "fact_hi": "यह खुशी के सूचकांक में ऊपर आता है।",
+    "hashtags": [
+      "#Vanuatu",
+      "#Happiness",
+      "#IslandLife",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+
+  {
+    "id": 96,
+    "country": "Maldives",
+    "title": "Lowest Country",
+    "summary": "Maldives is the lowest country above sea level.",
+    "fact_hi": "मालदीव सबसे निचला देश है।",
+    "hashtags": [
+      "#Maldives",
+      "#SeaLevel",
+      "#Islands",
+      "#Travel",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  },
+  {
+    "id": 97,
+    "country": "Seychelles",
+    "title": "Granite Islands",
+    "summary": "Unique granite island formations.",
+    "fact_hi": "यहां खास ग्रेनाइट द्वीप हैं।",
+    "hashtags": ["#Seychelles", "#Islands", "#Nature", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 98,
+    "country": "Malta",
+    "title": "Ancient Temples",
+    "summary": "Some of the oldest temples exist here.",
+    "fact_hi": "यहां सबसे पुराने मंदिर हैं।",
+    "hashtags": ["#Malta", "#Temples", "#History", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 99,
+    "country": "Cyprus",
+    "title": "Divided Island",
+    "summary": "Cyprus is divided into two parts.",
+    "fact_hi": "साइप्रस दो हिस्सों में बंटा है।",
+    "hashtags": ["#Cyprus", "#Island", "#Geopolitics", "#DidYouKnow", "#Shorts"]
+  },
+  {
+    "id": 100,
+    "country": "Armenia",
+    "title": "First Christian Nation",
+    "summary": "Armenia was the first country to adopt Christianity.",
+    "fact_hi": "आर्मेनिया पहला देश था जिसने ईसाई धर्म अपनाया।",
+    "hashtags": [
+      "#Armenia",
+      "#History",
+      "#Christianity",
+      "#DidYouKnow",
+      "#Shorts"
+    ]
+  }
+]

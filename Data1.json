@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "company": "Apple",
+    "title": "Apple’s first logo featured Isaac Newton sitting under a tree.",
+    "hashtags": ["#Apple", "#TechFacts", "#DidYouKnow", "#StartupStory"],
+    "logo_svg_url": "https://cdn.simpleicons.org/apple"
+  },
+  {
+    "id": 2,
+    "company": "Google",
+    "title": "Google’s first server storage was built using LEGO bricks.",
+    "hashtags": ["#Google", "#FunFact", "#TechWorld", "#Innovation"],
+    "logo_svg_url": "https://cdn.simpleicons.org/google"
+  },
+  {
+    "id": 3,
+    "company": "Amazon",
+    "title": "Amazon originally sold only books before becoming the everything store.",
+    "hashtags": ["#Amazon", "#Ecommerce", "#StartupFacts", "#Business"],
+    "logo_svg_url": "https://cdn.simpleicons.org/amazon"
+  },
+  {
+    "id": 4,
+    "company": "Netflix",
+    "title": "Netflix started by mailing DVDs before streaming existed.",
+    "hashtags": ["#Netflix", "#Streaming", "#DidYouKnow", "#TechEvolution"],
+    "logo_svg_url": "https://cdn.simpleicons.org/netflix"
+  },
+  {
+    "id": 5,
+    "company": "Coca-Cola",
+    "title": "Coca-Cola was originally sold as a medicine in pharmacies.",
+    "hashtags": ["#CocaCola", "#HistoryFacts", "#BrandStory", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/cocacola"
+  },
+  {
+    "id": 6,
+    "company": "Microsoft",
+    "title": "Microsoft was founded by Bill Gates and Paul Allen in 1975.",
+    "hashtags": ["#Microsoft", "#TechGiants", "#History", "#Innovation"],
+    "logo_svg_url": "https://cdn.simpleicons.org/microsoft"
+  },
+  {
+    "id": 7,
+    "company": "Tesla",
+    "title": "Tesla is named after inventor Nikola Tesla.",
+    "hashtags": ["#Tesla", "#ElectricCars", "#Innovation", "#FutureTech"],
+    "logo_svg_url": "https://cdn.simpleicons.org/tesla"
+  },
+  {
+    "id": 8,
+    "company": "Nike",
+    "title": "Nike’s famous swoosh logo cost only $35 to design.",
+    "hashtags": ["#Nike", "#Branding", "#Design", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/nike"
+  },
+  {
+    "id": 9,
+    "company": "McDonald's",
+    "title": "McDonald’s started as a BBQ restaurant before focusing on burgers.",
+    "hashtags": ["#McDonalds", "#FoodFacts", "#BusinessStory", "#FastFood"],
+    "logo_svg_url": "https://cdn.simpleicons.org/mcdonalds"
+  },
+  {
+    "id": 10,
+    "company": "Facebook",
+    "title": "Facebook was originally called 'TheFacebook'.",
+    "hashtags": ["#Facebook", "#SocialMedia", "#StartupFacts", "#Tech"],
+    "logo_svg_url": "https://cdn.simpleicons.org/facebook"
+  },
+  {
+    "id": 11,
+    "company": "Twitter",
+    "title": "The first tweet ever said 'just setting up my twttr'.",
+    "hashtags": ["#Twitter", "#SocialMedia", "#FunFact", "#X"],
+    "logo_svg_url": "https://cdn.simpleicons.org/twitter"
+  },
+  {
+    "id": 12,
+    "company": "Samsung",
+    "title": "Samsung originally sold groceries and dried fish before electronics.",
+    "hashtags": ["#Samsung", "#TechHistory", "#BusinessFacts", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/samsung"
+  },
+  {
+    "id": 13,
+    "company": "Sony",
+    "title": "Sony’s first product was a rice cooker that failed commercially.",
+    "hashtags": ["#Sony", "#TechFacts", "#Innovation", "#History"],
+    "logo_svg_url": "https://cdn.simpleicons.org/sony"
+  },
+  {
+    "id": 14,
+    "company": "BMW",
+    "title": "BMW started as an aircraft engine manufacturer.",
+    "hashtags": ["#BMW", "#CarFacts", "#History", "#LuxuryCars"],
+    "logo_svg_url": "https://cdn.simpleicons.org/bmw"
+  },
+  {
+    "id": 15,
+    "company": "Adidas",
+    "title": "Adidas was founded after a feud between two brothers.",
+    "hashtags": ["#Adidas", "#BusinessStory", "#Sportswear", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/adidas"
+  },
+  {
+    "id": 16,
+    "company": "YouTube",
+    "title": "YouTube was originally created as a dating website.",
+    "hashtags": ["#YouTube", "#FunFacts", "#TechStory", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/youtube"
+  },
+  {
+    "id": 17,
+    "company": "Instagram",
+    "title": "Instagram started as a check-in app called Burbn.",
+    "hashtags": ["#Instagram", "#SocialMedia", "#StartupStory", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/instagram"
+  },
+  {
+    "id": 18,
+    "company": "LinkedIn",
+    "title": "LinkedIn launched before Facebook in 2003.",
+    "hashtags": ["#LinkedIn", "#Career", "#TechHistory", "#Business"],
+    "logo_svg_url": "https://cdn.simpleicons.org/linkedin"
+  },
+  {
+    "id": 19,
+    "company": "Uber",
+    "title": "Uber was inspired when the founders couldn’t find a taxi in Paris.",
+    "hashtags": ["#Uber", "#StartupStory", "#Innovation", "#Business"],
+    "logo_svg_url": "https://cdn.simpleicons.org/uber"
+  },
+  {
+    "id": 20,
+    "company": "Airbnb",
+    "title": "Airbnb started by renting air mattresses in a living room.",
+    "hashtags": ["#Airbnb", "#StartupFacts", "#BusinessStory", "#Travel"],
+    "logo_svg_url": "https://cdn.simpleicons.org/airbnb"
+  },
+  {
+    "id": 21,
+    "company": "Snapchat",
+    "title": "Snapchat was originally called Picaboo before being rebranded.",
+    "hashtags": ["#Snapchat", "#SocialMedia", "#StartupStory", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/snapchat"
+  },
+  {
+    "id": 22,
+    "company": "Spotify",
+    "title": "Spotify’s name was misheard during a brainstorming session and stuck.",
+    "hashtags": ["#Spotify", "#MusicApp", "#StartupFacts", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/spotify"
+  },
+  {
+    "id": 23,
+    "company": "PayPal",
+    "title": "PayPal originally focused on cryptography before becoming a payment platform.",
+    "hashtags": ["#PayPal", "#Fintech", "#TechHistory", "#Business"],
+    "logo_svg_url": "https://cdn.simpleicons.org/paypal"
+  },
+  {
+    "id": 24,
+    "company": "eBay",
+    "title": "eBay’s first item sold was a broken laser pointer.",
+    "hashtags": ["#eBay", "#Ecommerce", "#FunFact", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/ebay"
+  },
+  {
+    "id": 25,
+    "company": "WhatsApp",
+    "title": "WhatsApp founders were rejected by Facebook before it later acquired them.",
+    "hashtags": ["#WhatsApp", "#StartupStory", "#TechWorld", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/whatsapp"
+  },
+  {
+    "id": 26,
+    "company": "Reddit",
+    "title": "Reddit’s mascot is named Snoo and represents curiosity.",
+    "hashtags": ["#Reddit", "#InternetCulture", "#FunFact", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/reddit"
+  },
+  {
+    "id": 27,
+    "company": "Intel",
+    "title": "Intel’s famous 'Intel Inside' campaign boosted brand recognition globally.",
+    "hashtags": ["#Intel", "#TechFacts", "#Innovation", "#Business"],
+    "logo_svg_url": "https://cdn.simpleicons.org/intel"
+  },
+  {
+    "id": 28,
+    "company": "HP",
+    "title": "HP founders decided the company name by flipping a coin.",
+    "hashtags": ["#HP", "#StartupFacts", "#TechHistory", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/hp"
+  },
+  {
+    "id": 29,
+    "company": "Dell",
+    "title": "Michael Dell started the company from his college dorm room.",
+    "hashtags": ["#Dell", "#StartupStory", "#TechWorld", "#Business"],
+    "logo_svg_url": "https://cdn.simpleicons.org/dell"
+  },
+  {
+    "id": 30,
+    "company": "Oracle",
+    "title": "Oracle is named after a CIA project the founders worked on.",
+    "hashtags": ["#Oracle", "#TechFacts", "#BusinessStory", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/oracle"
+  },
+  {
+    "id": 31,
+    "company": "Zoom",
+    "title": "Zoom’s founder was rejected by investors 40 times before success.",
+    "hashtags": ["#Zoom", "#StartupStory", "#Motivation", "#Business"],
+    "logo_svg_url": "https://cdn.simpleicons.org/zoom"
+  },
+  {
+    "id": 32,
+    "company": "Slack",
+    "title": "Slack started as an internal tool for a failed gaming company.",
+    "hashtags": ["#Slack", "#TechStartup", "#Innovation", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/slack"
+  },
+  {
+    "id": 33,
+    "company": "Dropbox",
+    "title": "Dropbox was inspired when its founder forgot his USB drive.",
+    "hashtags": ["#Dropbox", "#StartupStory", "#TechLife", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/dropbox"
+  },
+  {
+    "id": 34,
+    "company": "Pinterest",
+    "title": "Pinterest’s early growth came from personal invitations to users.",
+    "hashtags": ["#Pinterest", "#SocialMedia", "#StartupFacts", "#Growth"],
+    "logo_svg_url": "https://cdn.simpleicons.org/pinterest"
+  },
+  {
+    "id": 35,
+    "company": "TikTok",
+    "title": "TikTok merged with Musical.ly to become a global platform.",
+    "hashtags": ["#TikTok", "#SocialMedia", "#Viral", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/tiktok"
+  },
+  {
+    "id": 36,
+    "company": "Tinder",
+    "title": "Tinder was tested on college campuses before going global.",
+    "hashtags": ["#Tinder", "#AppStory", "#StartupLife", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/tinder"
+  },
+  {
+    "id": 37,
+    "company": "Discord",
+    "title": "Discord was originally built for gamers to communicate easily.",
+    "hashtags": ["#Discord", "#Gaming", "#TechApp", "#Community"],
+    "logo_svg_url": "https://cdn.simpleicons.org/discord"
+  },
+  {
+    "id": 38,
+    "company": "Adobe",
+    "title": "Adobe is named after a creek behind the founder’s house.",
+    "hashtags": ["#Adobe", "#Design", "#TechFacts", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/adobe"
+  },
+  {
+    "id": 39,
+    "company": "Nvidia",
+    "title": "Nvidia’s name comes from the Latin word 'invidia' meaning envy.",
+    "hashtags": ["#Nvidia", "#AI", "#TechFacts", "#Innovation"],
+    "logo_svg_url": "https://cdn.simpleicons.org/nvidia"
+  },
+  {
+    "id": 40,
+    "company": "IBM",
+    "title": "IBM’s slogan 'Think' has been used for over a century.",
+    "hashtags": ["#IBM", "#TechHistory", "#Business", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/ibm"
+  },
+  {
+    "id": 41,
+    "company": "KFC",
+    "title": "Colonel Sanders started KFC at the age of 65 after multiple failures.",
+    "hashtags": ["#KFC", "#Motivation", "#BusinessStory", "#NeverGiveUp"],
+    "logo_svg_url": "https://cdn.simpleicons.org/kfc"
+  },
+  {
+    "id": 42,
+    "company": "Starbucks",
+    "title": "Starbucks was originally going to be named 'Pequod' after Moby Dick.",
+    "hashtags": ["#Starbucks", "#Branding", "#FunFact", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/starbucks"
+  },
+  {
+    "id": 43,
+    "company": "Pepsi",
+    "title": "Pepsi went bankrupt twice before becoming a global brand.",
+    "hashtags": ["#Pepsi", "#BusinessStory", "#FailureToSuccess", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/pepsi"
+  },
+  {
+    "id": 44,
+    "company": "Burger King",
+    "title": "Burger King was originally called 'Insta-Burger King'.",
+    "hashtags": ["#BurgerKing", "#FastFood", "#BrandHistory", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/burgerking"
+  },
+  {
+    "id": 45,
+    "company": "Domino's",
+    "title": "Domino’s promised 30-minute delivery or free pizza in the 1980s.",
+    "hashtags": ["#Dominos", "#FoodFacts", "#BusinessStrategy", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/dominos"
+  },
+  {
+    "id": 46,
+    "company": "Lego",
+    "title": "Lego’s name comes from Danish words meaning 'play well'.",
+    "hashtags": ["#Lego", "#FunFact", "#Kids", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/lego"
+  },
+  {
+    "id": 47,
+    "company": "Ferrari",
+    "title": "Ferrari’s logo features a horse originally used by a WWI pilot.",
+    "hashtags": ["#Ferrari", "#CarFacts", "#Luxury", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/ferrari"
+  },
+  {
+    "id": 48,
+    "company": "Porsche",
+    "title": "The Porsche logo includes symbols from the Stuttgart coat of arms.",
+    "hashtags": ["#Porsche", "#CarFacts", "#LuxuryCars", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/porsche"
+  },
+  {
+    "id": 49,
+    "company": "Audi",
+    "title": "Audi’s four rings represent the merger of four companies.",
+    "hashtags": ["#Audi", "#CarFacts", "#History", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/audi"
+  },
+  {
+    "id": 50,
+    "company": "Volkswagen",
+    "title": "Volkswagen means 'people’s car' in German.",
+    "hashtags": ["#Volkswagen", "#CarFacts", "#History", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/volkswagen"
+  },
+  {
+    "id": 51,
+    "company": "Toyota",
+    "title": "Toyota started as a company that made automatic looms.",
+    "hashtags": ["#Toyota", "#CarFacts", "#BusinessHistory", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/toyota"
+  },
+  {
+    "id": 52,
+    "company": "Honda",
+    "title": "Honda began by producing motorized bicycles.",
+    "hashtags": ["#Honda", "#AutoIndustry", "#StartupStory", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/honda"
+  },
+  {
+    "id": 53,
+    "company": "Hyundai",
+    "title": "Hyundai means 'modernity' in Korean.",
+    "hashtags": ["#Hyundai", "#CarFacts", "#BrandMeaning", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/hyundai"
+  },
+  {
+    "id": 54,
+    "company": "Kia",
+    "title": "Kia’s name means 'to rise from Asia'.",
+    "hashtags": ["#Kia", "#CarFacts", "#BrandStory", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/kia"
+  },
+  {
+    "id": 55,
+    "company": "Rolex",
+    "title": "Rolex watches are assembled by hand and tested rigorously.",
+    "hashtags": ["#Rolex", "#Luxury", "#WatchFacts", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/rolex"
+  },
+  {
+    "id": 56,
+    "company": "Gucci",
+    "title": "Gucci started as a luggage company inspired by luxury hotels.",
+    "hashtags": ["#Gucci", "#LuxuryBrand", "#Fashion", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/gucci"
+  },
+  {
+    "id": 57,
+    "company": "Louis Vuitton",
+    "title": "Louis Vuitton never had sales or discounts on its products.",
+    "hashtags": ["#LouisVuitton", "#Luxury", "#FashionFacts", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/louisvuitton"
+  },
+  {
+    "id": 58,
+    "company": "Zara",
+    "title": "Zara can design and deliver new clothes in just 2–3 weeks.",
+    "hashtags": ["#Zara", "#Fashion", "#FastFashion", "#Business"],
+    "logo_svg_url": "https://cdn.simpleicons.org/zara"
+  },
+  {
+    "id": 59,
+    "company": "H&M",
+    "title": "H&M originally sold only women’s clothing when it started.",
+    "hashtags": ["#HM", "#Fashion", "#BusinessStory", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/hm"
+  },
+  {
+    "id": 60,
+    "company": "IKEA",
+    "title": "IKEA’s name is an acronym of the founder’s initials and hometown.",
+    "hashtags": ["#IKEA", "#BusinessFacts", "#BrandStory", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/ikea"
+  },
+  {
+    "id": 61,
+    "company": "Yahoo",
+    "title": "Yahoo originally stood for 'Yet Another Hierarchical Officious Oracle'.",
+    "hashtags": ["#Yahoo", "#TechFacts", "#DidYouKnow", "#InternetHistory"],
+    "logo_svg_url": "https://cdn.simpleicons.org/yahoo"
+  },
+  {
+    "id": 62,
+    "company": "Wikipedia",
+    "title": "Wikipedia is maintained by volunteers around the world.",
+    "hashtags": ["#Wikipedia", "#Knowledge", "#Internet", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/wikipedia"
+  },
+  {
+    "id": 63,
+    "company": "Quora",
+    "title": "Quora was founded by two former Facebook employees.",
+    "hashtags": ["#Quora", "#StartupStory", "#TechWorld", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/quora"
+  },
+  {
+    "id": 64,
+    "company": "Stack Overflow",
+    "title": "Stack Overflow was created to solve programming questions efficiently.",
+    "hashtags": ["#StackOverflow", "#Coding", "#Developers", "#Tech"],
+    "logo_svg_url": "https://cdn.simpleicons.org/stackoverflow"
+  },
+  {
+    "id": 65,
+    "company": "GitHub",
+    "title": "GitHub was acquired by Microsoft for $7.5 billion in 2018.",
+    "hashtags": ["#GitHub", "#Developers", "#TechNews", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/github"
+  },
+  {
+    "id": 66,
+    "company": "GitLab",
+    "title": "GitLab operates as a fully remote company with no central office.",
+    "hashtags": ["#GitLab", "#RemoteWork", "#TechCompany", "#Innovation"],
+    "logo_svg_url": "https://cdn.simpleicons.org/gitlab"
+  },
+  {
+    "id": 67,
+    "company": "WeWork",
+    "title": "WeWork’s valuation once dropped dramatically from $47 billion.",
+    "hashtags": ["#WeWork", "#StartupStory", "#Business", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/wework"
+  },
+  {
+    "id": 68,
+    "company": "WeChat",
+    "title": "WeChat is used for payments, messaging, and even booking services.",
+    "hashtags": ["#WeChat", "#SuperApp", "#Tech", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/wechat"
+  },
+  {
+    "id": 69,
+    "company": "Alibaba",
+    "title": "Alibaba’s name was chosen because it is easy to pronounce globally.",
+    "hashtags": ["#Alibaba", "#Ecommerce", "#BusinessStory", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/alibaba"
+  },
+  {
+    "id": 70,
+    "company": "Flipkart",
+    "title": "Flipkart started by selling books online in India.",
+    "hashtags": ["#Flipkart", "#StartupIndia", "#Ecommerce", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/flipkart"
+  },
+  {
+    "id": 71,
+    "company": "Ola",
+    "title": "Ola was inspired when its founder had a bad taxi experience.",
+    "hashtags": ["#Ola", "#StartupIndia", "#BusinessStory", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/ola"
+  },
+  {
+    "id": 72,
+    "company": "Swiggy",
+    "title": "Swiggy started as a logistics company before focusing on food delivery.",
+    "hashtags": ["#Swiggy", "#StartupIndia", "#FoodTech", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/swiggy"
+  },
+  {
+    "id": 73,
+    "company": "Zomato",
+    "title": "Zomato was originally called 'Foodiebay'.",
+    "hashtags": ["#Zomato", "#FoodTech", "#StartupStory", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/zomato"
+  },
+  {
+    "id": 74,
+    "company": "Byju's",
+    "title": "Byju’s began as offline coaching classes before going digital.",
+    "hashtags": ["#Byjus", "#EdTech", "#StartupIndia", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/byjus"
+  },
+  {
+    "id": 75,
+    "company": "Paytm",
+    "title": "Paytm gained massive growth during India’s 2016 demonetization.",
+    "hashtags": ["#Paytm", "#Fintech", "#India", "#Business"],
+    "logo_svg_url": "https://cdn.simpleicons.org/paytm"
+  },
+  {
+    "id": 76,
+    "company": "Razorpay",
+    "title": "Razorpay was started by two college students in India.",
+    "hashtags": ["#Razorpay", "#StartupIndia", "#Fintech", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/razorpay"
+  },
+  {
+    "id": 77,
+    "company": "SpaceX",
+    "title": "SpaceX is the first private company to send astronauts to space.",
+    "hashtags": ["#SpaceX", "#Space", "#Innovation", "#Future"],
+    "logo_svg_url": "https://cdn.simpleicons.org/spacex"
+  },
+  {
+    "id": 78,
+    "company": "Blue Origin",
+    "title": "Blue Origin focuses on reusable rocket technology.",
+    "hashtags": ["#BlueOrigin", "#SpaceTech", "#Innovation", "#Future"],
+    "logo_svg_url": "https://cdn.simpleicons.org/blueorigin"
+  },
+  {
+    "id": 79,
+    "company": "OpenAI",
+    "title": "OpenAI was founded to ensure artificial intelligence benefits humanity.",
+    "hashtags": ["#OpenAI", "#AI", "#Innovation", "#FutureTech"],
+    "logo_svg_url": "https://cdn.simpleicons.org/openai"
+  },
+  {
+    "id": 80,
+    "company": "Canva",
+    "title": "Canva was created to make design accessible to everyone.",
+    "hashtags": ["#Canva", "#Design", "#StartupStory", "#Creativity"],
+    "logo_svg_url": "https://cdn.simpleicons.org/canva"
+  },
+  {
+    "id": 81,
+    "company": "Duolingo",
+    "title": "Duolingo uses gamification to make learning languages addictive.",
+    "hashtags": ["#Duolingo", "#Learning", "#EdTech", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/duolingo"
+  },
+  {
+    "id": 82,
+    "company": "Roblox",
+    "title": "Roblox allows users to create and monetize their own games.",
+    "hashtags": ["#Roblox", "#Gaming", "#Metaverse", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/roblox"
+  },
+  {
+    "id": 83,
+    "company": "Epic Games",
+    "title": "Epic Games created Fortnite, one of the most popular games ever.",
+    "hashtags": ["#EpicGames", "#Gaming", "#Fortnite", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/epicgames"
+  },
+  {
+    "id": 84,
+    "company": "Unity",
+    "title": "Unity powers a majority of mobile games worldwide.",
+    "hashtags": ["#Unity", "#GameDev", "#Tech", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/unity"
+  },
+  {
+    "id": 85,
+    "company": "Twitch",
+    "title": "Twitch started as a general streaming site called Justin.tv.",
+    "hashtags": ["#Twitch", "#Streaming", "#Gaming", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/twitch"
+  },
+  {
+    "id": 86,
+    "company": "PlayStation",
+    "title": "PlayStation was originally a failed collaboration between Sony and Nintendo.",
+    "hashtags": ["#PlayStation", "#Gaming", "#TechHistory", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/playstation"
+  },
+  {
+    "id": 87,
+    "company": "Xbox",
+    "title": "The name Xbox comes from Microsoft's DirectX technology.",
+    "hashtags": ["#Xbox", "#Gaming", "#Microsoft", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/xbox"
+  },
+  {
+    "id": 88,
+    "company": "Disney",
+    "title": "Disney’s first character was Oswald the Lucky Rabbit, not Mickey Mouse.",
+    "hashtags": ["#Disney", "#Entertainment", "#FunFact", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/disney"
+  },
+  {
+    "id": 89,
+    "company": "Warner Bros",
+    "title": "Warner Bros was founded by four brothers who immigrated to the US.",
+    "hashtags": ["#WarnerBros", "#Entertainment", "#History", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/warnerbros"
+  },
+  {
+    "id": 90,
+    "company": "Marvel",
+    "title": "Marvel was originally called Timely Publications.",
+    "hashtags": ["#Marvel", "#Comics", "#Entertainment", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/marvel"
+  },
+  {
+    "id": 91,
+    "company": "DC",
+    "title": "DC stands for Detective Comics, one of its original series.",
+    "hashtags": ["#DC", "#Comics", "#Superheroes", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/dccomics"
+  },
+  {
+    "id": 92,
+    "company": "Pixar",
+    "title": "Pixar was originally a division of Lucasfilm before becoming independent.",
+    "hashtags": ["#Pixar", "#Animation", "#Movies", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/pixar"
+  },
+  {
+    "id": 93,
+    "company": "National Geographic",
+    "title": "National Geographic has been publishing since 1888.",
+    "hashtags": ["#NatGeo", "#Education", "#History", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/nationalgeographic"
+  },
+  {
+    "id": 94,
+    "company": "Discovery",
+    "title": "Discovery Channel focuses on real-world documentaries and science.",
+    "hashtags": ["#Discovery", "#Science", "#Education", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/discovery"
+  },
+  {
+    "id": 95,
+    "company": "BBC",
+    "title": "BBC is the world’s oldest national broadcasting organization.",
+    "hashtags": ["#BBC", "#Media", "#History", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/bbc"
+  },
+  {
+    "id": 96,
+    "company": "CNN",
+    "title": "CNN was the first channel to provide 24-hour news coverage.",
+    "hashtags": ["#CNN", "#News", "#Media", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/cnn"
+  },
+  {
+    "id": 97,
+    "company": "Uber Eats",
+    "title": "Uber Eats started as a small extension of Uber’s ride service.",
+    "hashtags": ["#UberEats", "#FoodDelivery", "#Startup", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/ubereats"
+  },
+  {
+    "id": 98,
+    "company": "DoorDash",
+    "title": "DoorDash was founded by Stanford students to solve delivery issues.",
+    "hashtags": ["#DoorDash", "#StartupStory", "#FoodTech", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/doordash"
+  },
+  {
+    "id": 99,
+    "company": "Stripe",
+    "title": "Stripe was created by two brothers to simplify online payments.",
+    "hashtags": ["#Stripe", "#Fintech", "#Startup", "#DidYouKnow"],
+    "logo_svg_url": "https://cdn.simpleicons.org/stripe"
+  },
+  {
+    "id": 100,
+    "company": "Shopify",
+    "title": "Shopify started because its founders couldn’t find a good e-commerce platform.",
+    "hashtags": ["#Shopify", "#Ecommerce", "#StartupStory", "#FunFact"],
+    "logo_svg_url": "https://cdn.simpleicons.org/shopify"
+  }
+]

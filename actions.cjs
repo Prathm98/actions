@@ -1,9 +1,12 @@
 const ProgressManager = require('./ProgressManager.cjs')
 const downloadVideo = require('./fetchFiles.cjs')
 const fs = require('fs')
+const path = require('path')
 
-async function run() {
-  const pm = new ProgressManager()
+const FILE_PATH = path.join(__dirname, 'progress.json')
+
+async function run(filePath = FILE_PATH, series = '') {
+  const pm = new ProgressManager(filePath)
 
   const { currentInsta, currentYt, currentFB } = pm.getCurrent()
 
@@ -16,8 +19,8 @@ async function run() {
   }
 
   const getFiles = async (current) => {
-    const filePath = `content/outputc${current}.mp4`
-    const outputFile = `content/final${current}.mp4`
+    const filePath = `content${series}/outputc${current}.mp4`
+    const outputFile = `content${series}/final${current}.mp4`
 
     console.log('processing', filePath)
 

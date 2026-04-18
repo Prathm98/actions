@@ -1,0 +1,77 @@
+name: Alternate days publish
+
+on:
+  schedule:
+    - cron: '30 8 * * 0,3,5'
+  push:
+    branches:
+      - insta-db
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main repo
+        uses: actions/checkout@v4
+        with:
+          ref: insta-db
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Get Files
+        uses: actions/github-script@v6
+        env:
+          GIT_PAT: ${{secrets.GIT_PAT }}
+          GIT_REPO: ${{secrets.GIT_REPO }}
+          GIT_BRANCH: ${{secrets.GIT_BRANCH_DB }}
+        with:
+          script: |
+            const run1 = require('./actions1.cjs')
+            run1()
+
+      - name: Commit files from specific folder to repository
+        run: |
+          git config --local user.email "46840479+Prathm98@users.noreply.github.com"
+          git config --local user.name "Prathmesh Wakodikar"
+          git add .
+          git commit -m "Published Videos"|| echo "No changes to commit"
+          git push origin HEAD:insta-db
+
+      - name: Decode credentials
+        run: |
+          echo "$YT_CRED" | base64 -d > credentials.json
+          echo "$YT_TOKEN" | base64 -d > token.json
+        env:
+          YT_CRED: ${{ secrets.YT_CRED }}
+          YT_TOKEN: ${{ secrets.YT_TOKEN_DB }}
+
+      - name: Publish
+        env:
+          GIT_PAT: ${{secrets.GIT_PAT }}
+          GIT_REPO: ${{secrets.GIT_REPO }}
+          GIT_BRANCH: ${{secrets.GIT_BRANCH_DB }}
+          INSTA_USERID: ${{secrets.INSTA_USERID_DB }}
+          FB_PAGEID: ${{secrets.FB_PAGEID_DB }}
+          INSTA_SECRETE: ${{secrets.INSTA_SECRETE_DB }}
+          FB_TOKEN: ${{secrets.FB_TOKEN }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+        run: |
+          node ./Runner1.js
+
+          git config --local user.email "46840479+Prathm98@users.noreply.github.com"
+          git config --local user.name "Prathmesh Wakodikar"
+          git add .
+          git commit -m "Updated status"|| echo "No changes to commit"
+          git push origin HEAD:insta-db
+
+          # echo "${{ secrets.GIT_PAT }}" | gh auth login --with-token
+
+          # base64 -w0 token.json | gh secret set YT_TOKEN

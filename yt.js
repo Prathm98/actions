@@ -72,7 +72,14 @@ async function authorize() {
 //   return oAuth2Client
 // }
 
-async function uploadVideo(auth, videoPath, title, description, thumbnail) {
+async function uploadVideo(
+  auth,
+  videoPath,
+  title,
+  description,
+  thumbnail,
+  playlistId = 'PLVNn8UuPqxhe3zGFQ-UaKC-P2ZzsDGk4I',
+) {
   const service = google.youtube('v3')
 
   try {
@@ -91,8 +98,6 @@ async function uploadVideo(auth, videoPath, title, description, thumbnail) {
               'art',
               'motivational',
               'episode',
-              'chanakya',
-              'chanakya_niti',
             ],
             categoryId: '24',
           },
@@ -129,7 +134,7 @@ async function uploadVideo(auth, videoPath, title, description, thumbnail) {
       part: 'snippet',
       requestBody: {
         snippet: {
-          playlistId: 'PLVNn8UuPqxhe3zGFQ-UaKC-P2ZzsDGk4I',
+          playlistId: playlistId || 'PLVNn8UuPqxhe3zGFQ-UaKC-P2ZzsDGk4I',
           resourceId: {
             kind: 'youtube#video',
             videoId: res.data.id,
@@ -145,7 +150,13 @@ async function uploadVideo(auth, videoPath, title, description, thumbnail) {
   }
 }
 
-const uploadYTVideo = async (videoPath, title, description, thumbnail) => {
+const uploadYTVideo = async (
+  videoPath,
+  title,
+  description,
+  thumbnail,
+  playlistId = 'PLVNn8UuPqxhe3zGFQ-UaKC-P2ZzsDGk4I',
+) => {
   try {
     const auth = await authorize()
     const res = await uploadVideo(
@@ -154,6 +165,7 @@ const uploadYTVideo = async (videoPath, title, description, thumbnail) => {
       title,
       description,
       thumbnail,
+      playlistId,
     )
     return res
   } catch (error) {
