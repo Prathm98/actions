@@ -1,4 +1,4 @@
-const { default: run } = require('./actions.cjs')
+const run = require('./actions.cjs')
 const path = require('path')
 
 const TOTAL_SERIES = 2
