@@ -32,9 +32,9 @@ const getData = (ch, series) => {
   const caption = `
 ${DataItem['title'].replace(/\n/g, ' ')}
 
-${DataItem['summary'].replace(/\n/g, ' ')}
+${(DataItem['summary'] || '').replace(/\n/g, ' ')}
 
-#daily_bytes #explorepage #explore #art #motivational #episode${ch} ${DataItem['hashtags'].join(' ')}
+#daily_bytes #explorepage #explore #art #motivational #episode${ch} ${(DataItem['hashtags'] || []).join(' ')}
 
 Disclaimer: This content and the images are AI-generated. The facts and information provided are for general informational purposes only and may not represent the most current or accurate details. Please verify with credible sources before making decisions. Always consult multiple references for confirmation.`
 
