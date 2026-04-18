@@ -8,6 +8,10 @@ import run from './actions.cjs'
 import { deleteVideosByNumber } from './cleanUp.js'
 import CounterManager from './CounterManager.cjs'
 import path from 'path'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const TOTAL_SERIES = 2
 const PLAYLISTS = {
