@@ -7,6 +7,7 @@ import ProgressManager from './ProgressManager.cjs'
 import run from './actions.cjs'
 import { deleteVideosByNumber } from './cleanUp.js'
 import CounterManager from './CounterManager.cjs'
+import path from 'path'
 
 const TOTAL_SERIES = 2
 const PLAYLISTS = {
