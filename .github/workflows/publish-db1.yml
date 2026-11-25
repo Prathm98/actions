@@ -2,7 +2,7 @@ name: Alternate days publish
 
 on:
   schedule:
-    - cron: '30 8 * * 0,3,5'
+    - cron: '43 8 * * 0,3,5'
   push:
     branches:
       - insta-db
